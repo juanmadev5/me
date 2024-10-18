@@ -13,28 +13,50 @@
 
 <body>
     <div class="container">
-        <label for="mode" class="ui-switch">
-            <input type="checkbox" id="mode">
-            <div class="slider">
-                <div class="circle"></div>
-            </div>
-        </label>
+        <div class="switch-container">
+            <p id="switch-mode"></p>
+            <label for="mode" class="ui-switch">
+                <input type="checkbox" id="mode">
+                <div class="slider">
+                    <div class="circle"></div>
+                </div>
+            </label>
+        </div>
+
         <img class="profile-picture"
             src="https://avatars.githubusercontent.com/u/115042535?s=400&u=62a596cea79ad50f38ed1e841b021acae7b7b79a&v=4"
             alt="Juan Manuel Velázquez">
         <h1>Juan Manuel Velázquez</h1>
         <div class="description">
-            Estudiante de Ingeniería Informática, Técnico Informático, Desarrollador Android y Web Full Stack.
+            Desarrollador Android y Web Full Stack.
             <div class="location">
-                <img width="22" height="22" src="https://img.icons8.com/ios/50/marker--v1.png" alt="Ubicación"
-                    style="filter: brightness(0) saturate(100%) invert(71%) sepia(39%) saturate(4482%) hue-rotate(169deg) brightness(94%) contrast(94%);" />
-                <p translate="no">Limpio, Paraguay</p>
+                <a href="https://maps.app.goo.gl/sKqnabRT4ichUkqN7">
+                    <img class="location-icon" width="22" height="22" src="https://img.icons8.com/ios/50/marker--v1.png"
+                        alt="Ubicación" />
+                </a>
+                <p translate="no">Ciudad de Limpio, Paraguay</p>
+            </div>
+        </div>
+
+        <!-- Acerca de mi -->
+        <div class="section">
+            <div class="section-title"><img class="title-logo" src="https://img.icons8.com/ios/50/info--v1.png"
+                    alt="Acerca de mi" />Acerca de mi</div>
+            <div class="icon-list">
+                <div class="icon-item">
+                    <p class="about-me">Soy estudiante de ingeniería informática, técnico informático, desarrollador de
+                        aplicaciones
+                        móviles Android y Web Full Stack con experiencia de 2 años en ambos con proyectos personales y
+                        algunos proyectos de código abierto en la comunidad Android.</p>
+                </div>
             </div>
         </div>
 
         <!-- Experiencias -->
         <div class="section">
-            <div class="section-title">Experiencia laboral</div>
+            <div class="section-title"><img class="title-logo"
+                    src="https://img.icons8.com/external-tanah-basah-basic-outline-tanah-basah/24/external-job-web-and-seo-tanah-basah-basic-outline-tanah-basah.png"
+                    alt="Experiencia laboral" />Experiencia laboral</div>
             <div class="icon-list">
                 <div class="icon-item">
                     <ul class="job-title-margin-lnh">
@@ -53,7 +75,8 @@
 
         <!-- Educación -->
         <div class="section">
-            <div class="section-title">Educación</div>
+            <div class="section-title"><img class="title-logo" src="https://img.icons8.com/ios/50/diploma.png"
+                    alt="Educación" />Educación</div>
             <div class="icon-list">
                 <div class="icon-item">
                     <ul class="job-title-margin-lnh">
@@ -78,7 +101,8 @@
 
         <!-- Habilidades -->
         <div class="section">
-            <div class="section-title">Habilidades</div>
+            <div class="section-title"><img class="title-logo" src="https://img.icons8.com/ios/50/learning--v1.png"
+                    alt="Habilidades" />Habilidades</div>
             <div class="icon-list">
                 <div class="icon-item">
                     <ul class="job-title-margin-lnh">
@@ -98,28 +122,37 @@
 
         <!-- Tecnologías -->
         <div class="section">
-            <div class="section-title">Tecnologías que manejo</div>
+            <div class="section-title"><img class="title-logo" src="https://img.icons8.com/ios/50/engineering.png"
+                    alt="Tecnologías que utilizo" />Tecnologías que utilizo</div>
             <div class="icon-list">
-                <div class="icon-item">
-                    <img src="https://img.icons8.com/color/48/kotlin.png" alt="Kotlin">
-                    <span>Kotlin</span>
-                </div>
                 <div class="icon-item">
                     <img src="https://www.alura.com.br/assets/api/cursos/512/jetpack-compose-app-android.png"
                         alt="Jetpack Compose">
-                    <span>Jetpack Compose</span>
+                    <span>Android Jetpack Compose</span>
+                </div>
+                <div class="icon-item">
+                    <img src="https://img.icons8.com/fluency/48/flutter.png" alt="Flutter">
+                    <span>Flutter</span>
                 </div>
                 <div class="icon-item">
                     <img src="https://img.icons8.com/ios-filled/30/000000/react-native.png" alt="React">
-                    <span>React</span>
+                    <span>React + Vite</span>
                 </div>
                 <div class="icon-item">
                     <img src="https://img.icons8.com/ios-filled/30/000000/typescript.png" alt="Typescript">
                     <span>Typescript</span>
                 </div>
                 <div class="icon-item">
-                    <img src="https://img.icons8.com/ios-filled/30/000000/c-plus-plus-logo.png" alt="C++">
-                    <span>C++</span>
+                    <img src="https://img.icons8.com/color/48/tailwindcss.png" alt="TailwindCSS">
+                    <span>TailwindCSS</span>
+                </div>
+                <div class="icon-item">
+                    <img src="https://img.icons8.com/nolan/64/html-5.png" alt="HTML">
+                    <span>HTML</span>
+                </div>
+                <div class="icon-item">
+                    <img src="https://img.icons8.com/ios/50/css3.png" alt="CSS">
+                    <span>CSS</span>
                 </div>
                 <div class="icon-item">
                     <img src="https://img.icons8.com/ios-filled/30/000000/python.png" alt="Python">
@@ -129,17 +162,36 @@
                     <img src="https://img.icons8.com/ios-filled/30/000000/mysql-logo.png" alt="MySQL">
                     <span>MySQL / MySQL Workbench</span>
                 </div>
-                <div class="icon-item">
-                    <img src="https://img.icons8.com/fluency/48/flutter.png" alt="Flutter">
-                    <span>Flutter</span>
-                </div>
             </div>
         </div>
 
         <!-- Proyectos -->
         <div class="section">
-            <div class="section-title">Proyectos</div>
+            <div class="section-title"><img class="title-logo"
+                    src="https://img.icons8.com/ios-filled/50/project-management.png" alt="Proyectos" />Proyectos</div>
             <div class="icon-list">
+                <div class="icon-item">
+                    <a href="#" target="_blank">
+                        <img src="https://img.icons8.com/nolan/64/html-5.png" alt="HTML">
+                    </a>
+                    <span style="line-height: 22px;">
+                        <a href="https://github.com/juanmadev5/me" target="_blank">Este portafolio</a> (HTML, CSS,
+                        JS)<br>
+                    </span>
+                </div>
+                <div class="icon-item">
+                    <a href="#" target="_blank">
+                        <img src="https://img.icons8.com/ios-filled/30/000000/react-native.png" alt="Express Task+">
+                    </a>
+                    <span style="line-height: 22px;">
+                        <a href="https://github.com/juanmadev5/express-task-plus" target="_blank">Express Task+</a>
+                        (Vite + React)<br>
+                        Sitio web que te permite crear tareas a hacer, permite registrarse y iniciar sesión para guardar
+                        las tareas. <br>
+                        Tecnologías utilizadas: Vite + React, TailwindCSS, TypeScript, Firebase Login y Firebase
+                        Realtime Database.
+                    </span>
+                </div>
                 <div class="icon-item">
                     <a href="#" target="_blank">
                         <img src="https://img.icons8.com/fluency/48/android-os.png" alt="Imagify">
@@ -147,8 +199,9 @@
                     <span style="line-height: 22px;">
                         <a href="https://github.com/juanmadev5/Imagify" target="_blank">Imagify</a> (Android)<br>
                         Aplicación que te permite obtener imagenes de unsplash.com por medio de su API, es mi proyecto
-                        más avanzado hasta la fecha. 
-                        Tecnologías utilizadas: Jetpack Compose, Kotlin, MVVM, Dagger-Hilt, Retrofit, DataStore, OkHttp, Coil Image y Proguard Rules.
+                        más avanzado hasta la fecha. <br>
+                        Tecnologías utilizadas: Jetpack Compose, Kotlin, MVVM, Dagger-Hilt, Retrofit, DataStore, OkHttp,
+                        Coil Image y Proguard Rules.
                     </span>
                 </div>
                 <div class="icon-item">
@@ -158,7 +211,7 @@
                     <span style="line-height: 22px;">
                         <a href="https://github.com/juanmadev5/TicTacToe" target="_blank">TicTacToe</a> (Android)<br>
                         Juego TicTacToe, destaca por una interfaz intuitiva y
-                        lógica de juego fluida. 
+                        lógica de juego fluida. <br>
                         Tecnologías utilizadas: Jetpack Compose, Kotlin, ViewModel.
                     </span>
                 </div>
@@ -169,7 +222,7 @@
                     <span style="line-height: 22px;">
                         <a href="https://github.com/juanmadev5/ToDoExpress" target="_blank">ToDo Express</a>
                         (Android)<br>
-                        Sencilla aplicación que te permite guardar/borrar tareas a realizar.
+                        Sencilla aplicación que te permite guardar/borrar tareas a realizar.<br>
                         Tecnologías utilizadas: Jetpack Compose, Kotlin, Dagger-Hilt, ViewModel, Android Room.
                     </span>
                 </div>
@@ -181,19 +234,8 @@
                         <a href="https://github.com/juanmadev5/onepieceapiexample" target="_blank">OnePiece Characters
                             info</a> (Flutter)<br>
                         Aplicación básica que obtiene información de los personajes de OnePiece por medio de la API de
-                        api.api-onepiece.com, es mi primer proyecto multiplataforma. 
+                        api.api-onepiece.com. <br>
                         Tecnologías utilizadas: Flutter, Dart.
-                    </span>
-                </div>
-                <div class="icon-item">
-                    <a href="#" target="_blank">
-                        <img src="https://img.icons8.com/ios-filled/30/000000/react-native.png" alt="Express Task+">
-                    </a>
-                    <span style="line-height: 22px;">
-                        <a href="https://github.com/juanmadev5/express-task-plus" target="_blank">Express Task+
-                            </a> (Vite + React)<br>
-                        Sitio web que te permite crear tareas a hacer, permite registrarse y iniciar sesión para guardar las tareas. 
-                        Tecnologías utilizadas: Vite + React, TailwindCSS, TypeScript, Firebase Login y Firebase Realtime Database.
                     </span>
                 </div>
             </div>
@@ -206,7 +248,7 @@
             <div class="icon-list">
                 <div class="icon-item">
                     <img src="https://img.icons8.com/ios/50/new-post--v1.png" alt="Email">
-                    <span>juanma261005@gmail.com</span>
+                    <a href="mailto:juanma261005@gmail.com">juanma261005@gmail.com</a>
                 </div>
             </div>
         </div>

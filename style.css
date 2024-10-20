@@ -169,15 +169,6 @@ a {
     text-align: start;
 }
 
-.location-icon {
-    transition: transform 0.3s ease;
-    filter: brightness(0) saturate(100%) invert(71%) sepia(39%) saturate(4482%) hue-rotate(169deg) brightness(94%) contrast(94%);
-}
-
-.location-icon:hover {
-    transform: scale(1.2);
-}
-
 .location {
     margin-top: 24px;
     display: flex;

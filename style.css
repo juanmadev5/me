@@ -182,6 +182,10 @@ a {
     flex-direction: row;
 }
 
+.location-icon {
+    filter: brightness(0) saturate(100%) invert(71%) sepia(39%) saturate(4482%) hue-rotate(169deg) brightness(94%) contrast(94%);
+}
+
 .location p {
     margin-left: 8px;
 }

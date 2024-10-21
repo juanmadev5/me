@@ -1,3 +1,10 @@
+@font-face {
+    font-family: "Comfortaa";
+    src: url('assets/fonts/Comfortaa-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 :root {
     --title-color: #14b4ff;
     --icons-color-filter: #14b4ff;

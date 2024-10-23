@@ -1,10 +1,9 @@
 import emailjs from "emailjs-com";
-import programmingImage from "../assets/undraw-programming.webp";
 
 export default function Contact() {
-  const serviceId = "me_portfolio_contact";
-  const templateId = "gmail_portfolio";
-  const userId = "H90_91g0YGwJyueVE";
+  const serviceId = import.meta.env.VITE_EJS_SERVICE_ID;
+  const templateId = import.meta.env.VITE_EJS_TEMPLATE_ID;
+  const userId = import.meta.env.VITE_EJS_USER_ID;
 
   function sendEmail(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -22,19 +21,14 @@ export default function Contact() {
   }
 
   return (
-    <div className="flex justify-evenly items-center h-auto w-full max-md:flex-col max-md:mt-4">
+    <div className="flex  items-center h-auto w-full max-md:flex-col max-md:mt-4">
       <div className="w-64 text-white flex flex-col p-4 items-center">
         <p>
-          ¿Tienes un proyecto en mente? ¡Contáctame y hagamos realidad ese
-          proyecto!
+          ¿Tienes un proyecto en mente? ¡No dudes en contactarme y hagamos que
+          esa idea cobre vida!
         </p>
-        <img
-          className="mt-6 rounded-2xl"
-          src={programmingImage}
-          alt="Ilustración de programador"
-        />
       </div>
-      <form id="form" className="p-8 max-md:w-full" onSubmit={sendEmail}>
+      <form id="form" className="p-8 w-full" onSubmit={sendEmail}>
         <div className="mb-4">
           <label className="block text-sm mb-2 text-white" htmlFor="name">
             Nombre

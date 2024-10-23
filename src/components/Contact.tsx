@@ -1,9 +1,13 @@
 import emailjs from "emailjs-com";
 
 export default function Contact() {
-  const serviceId = import.meta.env.VITE_EJS_SERVICE_ID;
-  const templateId = import.meta.env.VITE_EJS_TEMPLATE_ID;
-  const userId = import.meta.env.VITE_EJS_USER_ID;
+  const serviceId: string = import.meta.env.VITE_EJS_SERVICE_ID;
+  const templateId: string = import.meta.env.VITE_EJS_TEMPLATE_ID;
+  const userId: string = import.meta.env.VITE_EJS_USER_ID;
+
+  console.log("Service ID:", serviceId);
+  console.log("Template ID:", templateId);
+  console.log("User ID:", userId);
 
   function sendEmail(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();

@@ -25,7 +25,7 @@ export default function Proyects() {
     "https://github.com/juanmadev5/Imagify",
     "https://github.com/juanmadev5/express-task-plus",
     "https://github.com/juanmadev5/TicTacToe",
-    "https://github.com/juanmadev5/ToDoExpress",
+    "https://github.com/juanmadev5/ToDoExpress",  
   ];
 
   return (

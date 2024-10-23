@@ -1,4 +1,5 @@
 import emailjs from "emailjs-com";
+import programmingImage from "../assets/undraw-programming.webp";
 
 export default function Contact() {
   const serviceId = "me_portfolio_contact";
@@ -29,7 +30,7 @@ export default function Contact() {
         </p>
         <img
           className="mt-6 rounded-2xl"
-          src="src/assets/undraw-programming.webp"
+          src={programmingImage}
           alt="Ilustración de programador"
         />
       </div>

@@ -1,3 +1,5 @@
+import locationIcon from "../assets/ic-location.webp";
+
 export default function ProfileHeader() {
   const name = "Juan Manuel Velázquez";
   const description = "Desarrollador Android y Web Full Stack";
@@ -18,7 +20,8 @@ export default function ProfileHeader() {
         <div className="w-full mt-4 ml-3 flex flex-row max-md:text-sm">
           <img
             className="invert max-md:w-5 max-md:h-5 w-5 h-5"
-            src="src/assets/ic-location.webp"
+            src={locationIcon}
+            alt="Icono de ubicacion"
           />
           <p className="ml-2 text-white" translate="no">
             {location}

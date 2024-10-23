@@ -1,4 +1,12 @@
 import CustomSection from "./CustomSection";
+import composeIcon from "../assets/ic-compose.webp";
+import flutterIcon from "../assets/ic-flutter.webp";
+import reactIcon from "../assets/ic-react.webp";
+import tsIcon from "../assets/ic-ts.webp";
+import tailwindIcon from "../assets/ic-tailwindcss.webp";
+import kotlinIcon from "../assets/ic-kotlin.webp";
+import dartIcon from "../assets/ic-dart.webp";
+import sqlIcon from "../assets/ic-sql.webp";
 
 export default function Stack() {
   const stackNames = [
@@ -12,15 +20,16 @@ export default function Stack() {
     "MySQL",
   ];
   const stackIcons = [
-    "src/assets/ic-compose.webp",
-    "src/assets/ic-flutter.webp",
-    "src/assets/ic-react.webp",
-    "src/assets/ic-ts.webp",
-    "src/assets/ic-tailwindcss.webp",
-    "src/assets/ic-kotlin.webp",
-    "src/assets/ic-dart.webp",
-    "src/assets/ic-sql.webp",
+    composeIcon,
+    flutterIcon,
+    reactIcon,
+    tsIcon,
+    tailwindIcon,
+    kotlinIcon,
+    dartIcon,
+    sqlIcon,
   ];
+
   return (
     <CustomSection>
       <div className="grid grid-cols-[repeat(auto-fill,minmax(200px,1fr))] gap-4 w-full">

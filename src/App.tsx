@@ -1,3 +1,7 @@
+import icInfo from "./assets/ic-info.webp";
+import icDev from "./assets/ic-dev.webp";
+import icProyects from "./assets/ic-proyects.webp";
+import icEmail from "./assets/ic-email.webp";
 import AboutMe from "./components/AboutMe";
 import Contact from "./components/Contact";
 import ProfileHeader from "./components/ProfileHeader";
@@ -12,19 +16,13 @@ export default function App() {
       <main className="flex flex-col items-center justify-center antialiased">
         <div className="w-[700px] max-md:w-10/12">
           <ProfileHeader />
-          <TitleComponent icon="src/assets/ic-info.webp" title="Acerca de mi" />
+          <TitleComponent icon={icInfo} title="Acerca de mi" />
           <AboutMe />
-          <TitleComponent
-            icon="src/assets/ic-dev.webp"
-            title="Tecnologías que utilizo"
-          />
+          <TitleComponent icon={icDev} title="Tecnologías que utilizo" />
           <Stack />
-          <TitleComponent
-            icon="src/assets/ic-proyects.webp"
-            title="Mis Proyectos"
-          />
+          <TitleComponent icon={icProyects} title="Mis Proyectos" />
           <Proyects />
-          <TitleComponent icon="src/assets/ic-email.webp" title="Contáctame" />
+          <TitleComponent icon={icEmail} title="Contáctame" />
           <Contact />
           <Social />
         </div>

@@ -5,10 +5,6 @@ export default function Contact() {
   const templateId: string = import.meta.env.VITE_EJS_TEMPLATE_ID;
   const userId: string = import.meta.env.VITE_EJS_USER_ID;
 
-  console.log("Service ID:", serviceId);
-  console.log("Template ID:", templateId);
-  console.log("User ID:", userId);
-
   function sendEmail(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
 

@@ -67,6 +67,19 @@ class Data {
         icon: icAndroid,
         link: "https://github.com/juanmadev5/ToDoExpress",
       },
+      {
+        name: "OnePiece API Example",
+        description:
+          "Obtén información de los personajes de OnePiece por medio de una API",
+        icon: dartIcon,
+        link: "https://github.com/juanmadev5/onepieceapiexample",
+      },
+      {
+        name: "Random Words",
+        description: "Obtén palabras aleatorias desde una API",
+        icon: dartIcon,
+        link: "https://github.com/juanmadev5/flutter-random-words",
+      },
     ],
     socialLinks: [
       {

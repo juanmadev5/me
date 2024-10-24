@@ -28,7 +28,7 @@ export default function Social() {
   ];
 
   return (
-    <div className="overflow-x-hidden w-auto mt-6 mx-2 flex flex-row">
+    <div className="overflow-x-hidden w-auto h-8 mt-6 mx-2 flex flex-row">
       {socialItems.map((item, index) => (
         <a key={index} href={item.link} rel="noopener noreferrer">
           <img

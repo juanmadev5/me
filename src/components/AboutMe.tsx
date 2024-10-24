@@ -3,7 +3,7 @@ import CustomSection from "./CustomSection";
 export default function AboutMe() {
   return (
     <CustomSection>
-      <p className="w-auto tracking-wider">
+      <p className="overflow-x-hidden w-auto tracking-wider">
         Estudiante de Ingeniería Informática y Técnico en Informática,
         especializado en desarrollo Android y Web Full Stack. Con más de 2 años
         de experiencia en proyectos personales y contribuciones al código

@@ -13,7 +13,7 @@ import TitleComponent from "./components/TitleComponent";
 export default function App() {
   return (
     <main className="overflow-x-hidden w-full flex flex-col items-center justify-center antialiased font-comfortaa bg-gradient-to-tr from-neutral-900 to-cyan-900">
-      <div className="w-[700px] max-md:w-full p-2">
+      <div className="w-[700px] max-md:w-full p-2 max-md:p-0">
         <ProfileHeader />
         <TitleComponent icon={icInfo} title="Acerca de mi" />
         <AboutMe />
@@ -22,8 +22,8 @@ export default function App() {
         <TitleComponent icon={icProyects} title="Mis Proyectos" />
         <Proyects />
         <TitleComponent icon={icEmail} title="Contáctame" />
+        <section id="contact_section" className="overflow-x-hidden "></section>
         <Contact />
-        <Social />
       </div>
     </main>
   );

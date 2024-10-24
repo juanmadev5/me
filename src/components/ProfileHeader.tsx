@@ -1,11 +1,12 @@
 import locationIcon from "../assets/ic-location.webp";
+import Social from "./Social";
 
 export default function ProfileHeader() {
   const name = "Juan Manuel Velázquez";
   const description = "Desarrollador Android y Web Full Stack";
   const location = "Ciudad de Limpio, Paraguay";
   return (
-    <div className="tracking-wide w-full flex flex-col h-auto py-4 bg-gradient-to-br from-sky-900 to-teal-600 rounded-xl">
+    <div className="overflow-x-hidden tracking-wide w-full flex flex-col h-auto py-8 bg-gradient-to-br from-sky-900 to-teal-600 rounded-xl max-md:rounded-none">
       <div className="w-full h-auto flex py-2">
         <img
           className="ml-4 rounded-full w-28 h-28"
@@ -26,6 +27,7 @@ export default function ProfileHeader() {
           {location}
         </p>
       </div>
+      <Social />
     </div>
   );
 }

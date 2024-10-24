@@ -39,7 +39,7 @@ export default function Proyects() {
   ];
 
   return (
-    <div className="w-full h-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-6">
+    <div className="overflow-x-hidden w-full h-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-6">
       {proyects.map((project, index) => (
         <div
           key={index}

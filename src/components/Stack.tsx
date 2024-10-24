@@ -17,12 +17,12 @@ export default function Stack() {
     { name: "Dart", icon: dartIcon },
     { name: "Kotlin", icon: kotlinIcon },
     { name: "MySQL", icon: sqlIcon },
-    { name: "TypeScript", icon: tsIcon }, 
+    { name: "TypeScript", icon: tsIcon },
   ];
 
   return (
     <CustomSection>
-      <div className="flex-wrap w-full">
+      <div className="overflow-x-hidden flex-wrap">
         {stackItems.map((item, index) => (
           <div
             key={index}

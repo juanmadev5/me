@@ -21,9 +21,9 @@ export default function Contact() {
   }
 
   return (
-    <div className="flex  items-center h-auto w-full max-md:flex-col max-md:mt-4">
-      <div className="w-64 text-white flex flex-col p-4 items-center">
-        <p>
+    <div className="overflow-x-hidden flex items-center h-auto w-full max-md:flex-col max-md:mt-4">
+      <div className="mt-4">
+        <p className="text-white text-left mx-8">
           ¿Tienes un proyecto en mente? ¡No dudes en contactarme y hagamos que
           esa idea cobre vida!
         </p>

@@ -6,7 +6,6 @@ import AboutMe from "./components/AboutMe";
 import Contact from "./components/Contact";
 import ProfileHeader from "./components/ProfileHeader";
 import Proyects from "./components/Proyects";
-import Social from "./components/Social";
 import Stack from "./components/Stack";
 import TitleComponent from "./components/TitleComponent";
 

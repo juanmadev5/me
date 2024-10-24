@@ -21,7 +21,6 @@ export default function App() {
         <TitleComponent icon={icProyects} title="Mis Proyectos" />
         <Proyects />
         <TitleComponent icon={icEmail} title="Contáctame" />
-        <section id="contact_section" className="overflow-x-hidden "></section>
         <Contact />
       </div>
     </main>

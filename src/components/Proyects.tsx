@@ -1,46 +1,12 @@
-import icReact from "../assets/ic-react.webp";
-import icAndroid from "../assets/ic-android.webp";
 import icGoto from "../assets/ic-goto.webp";
+import ProvideData from "../data/Data";
 
 export default function Proyects() {
-  const proyects = [
-    {
-      name: "Este portafolio",
-      description: "Hecho con React y TailwindCSS.",
-      icon: icReact,
-      link: "https://github.com/juanmadev5/me",
-    },
-    {
-      name: "Imagify",
-      description: "App para buscar imágenes de Unsplash con Jetpack Compose.",
-      icon: icAndroid,
-      link: "https://github.com/juanmadev5/Imagify",
-    },
-    {
-      name: "Express Task+",
-      description:
-        "App de gestión de tareas con autenticación usando React y Firebase.",
-      icon: icReact,
-      link: "https://github.com/juanmadev5/express-task-plus",
-    },
-    {
-      name: "TicTacToe",
-      description:
-        "Juego clásico con una interfaz simple usando Jetpack Compose.",
-      icon: icAndroid,
-      link: "https://github.com/juanmadev5/TicTacToe",
-    },
-    {
-      name: "ToDo Express",
-      description: "App sencilla para gestionar tareas con Jetpack Compose.",
-      icon: icAndroid,
-      link: "https://github.com/juanmadev5/ToDoExpress",
-    },
-  ];
+  const data = ProvideData();
 
   return (
     <div className="overflow-x-hidden w-full h-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-6">
-      {proyects.map((project, index) => (
+      {data.myData.myProyects.map((project, index) => (
         <div
           key={index}
           className="h-auto max-w-md mx-auto bg-gray-900 shadow-lg rounded-xl overflow-hidden transform transition duration-500 md:hover:scale-105 hover:shadow-2xl max-md:w-full"
@@ -64,9 +30,9 @@ export default function Proyects() {
               <img
                 className="w-4 h-4 mr-2 invert"
                 src={icGoto}
-                alt="Ir al repositorio del proyecto"
+                alt={data.gotoRepo}
               />
-              Ver en GitHub
+              {data.seeOnGH}
             </a>
           </div>
         </div>

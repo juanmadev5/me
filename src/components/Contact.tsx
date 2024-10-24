@@ -1,37 +1,39 @@
 import emailjs from "emailjs-com";
+import ProvideData from "../data/Data";
 
 export default function Contact() {
-  const serviceId: string = import.meta.env.VITE_EJS_SERVICE_ID;
-  const templateId: string = import.meta.env.VITE_EJS_TEMPLATE_ID;
-  const userId: string = import.meta.env.VITE_EJS_USER_ID;
+  const data = ProvideData();
 
   function sendEmail(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
 
     emailjs
-      .sendForm(serviceId, templateId, event.currentTarget, userId)
+      .sendForm(
+        data.serviceId,
+        data.templateId,
+        event.currentTarget,
+        data.userId
+      )
       .then(() => {
-        alert(
-          "¡Mensaje enviado exitosamente. Te responderé lo más rápido posible!"
-        );
+        alert(data.alertSended);
       })
       .catch(() => {
-        alert("Hubo un problema al enviar el mensaje. Intenta nuevamente.");
+        alert(data.alertError);
       });
   }
 
   return (
-    <div id="contact_section" className="overflow-x-hidden flex items-center h-auto w-full max-md:flex-col max-md:mt-4">
+    <div
+      id="contact_section"
+      className="overflow-x-hidden flex items-center h-auto w-full max-md:flex-col max-md:mt-4"
+    >
       <div className="mt-4">
-        <p className="text-white text-left mx-8">
-          ¿Tienes un proyecto en mente? ¡No dudes en contactarme y hagamos que
-          esa idea cobre vida!
-        </p>
+        <p className="text-white text-left mx-8">{data.contactDesc}</p>
       </div>
       <form id="form" className="p-8 w-full" onSubmit={sendEmail}>
         <div className="mb-4">
           <label className="block text-sm mb-2 text-white" htmlFor="name">
-            Nombre
+            {data.formName}
           </label>
           <input
             type="text"
@@ -39,14 +41,14 @@ export default function Contact() {
             name="from_name"
             autoComplete="true"
             className="shadow appearance-none border-[1px] rounded-2xl w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring focus:border-sky-300"
-            placeholder="Tu nombre"
+            placeholder={data.formNamePH}
             required
           />
         </div>
 
         <div className="mb-4">
           <label className="block text-sm mb-2 text-white" htmlFor="email">
-            Correo Electrónico
+            {data.formEmail}
           </label>
           <input
             type="email"
@@ -54,21 +56,21 @@ export default function Contact() {
             name="from_email"
             autoComplete="true"
             className="shadow appearance-none border-[1px] rounded-2xl w-full py-2 px-3 leading-tight focus:outline-none focus:ring focus:border-sky-300"
-            placeholder="Tu correo"
+            placeholder={data.formEmailPH}
             required
           />
         </div>
 
         <div className="mb-4">
           <label className="block text-sm mb-2 text-white" htmlFor="message">
-            Mensaje
+            {data.formMSJ}
           </label>
           <textarea
             id="message"
             name="message"
             rows={4}
             className="shadow appearance-none border-[1px] rounded-2xl w-full py-2 px-3 leading-tight focus:outline-none focus:ring focus:border-sky-300"
-            placeholder="Tu mensaje"
+            placeholder={data.formMSJPH}
             required
           ></textarea>
         </div>
@@ -79,7 +81,7 @@ export default function Contact() {
             type="submit"
             className="bg-sky-700 hover:bg-sky-800 text-white font-bold py-2 px-4 rounded-2xl focus:outline-none focus:shadow-outline"
           >
-            Enviar
+            {data.sendBtn}
           </button>
         </div>
       </form>

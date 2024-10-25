@@ -22,7 +22,7 @@ class Data {
       "https://avatars.githubusercontent.com/u/115042535?s=400&u=62a596cea79ad50f38ed1e841b021acae7b7b79a&v=4",
     location: "Ciudad de Limpio, Paraguay",
     aboutMeDescription:
-      "Estudiante de Ingeniería Informática y Técnico en Informática, especializado en desarrollo Android y Web Full Stack. Con más de 2 años de experiencia en proyectos personales y contribuciones al código abierto, me enfoco en crear soluciones eficientes y mejorar la experiencia del usuario usando tecnologías modernas.",
+      "Estudiante de Ingeniería Informática y Técnico en Informática, desarrollador Android y Web Full Stack. Con más de 2 años de experiencia en proyectos personales, me enfoco en crear soluciones eficientes y mejorar la experiencia del usuario usando tecnologías modernas.",
     myStack: [
       { name: "Jetpack Compose", icon: composeIcon },
       { name: "Flutter", icon: flutterIcon },
@@ -71,13 +71,13 @@ class Data {
         name: "OnePiece API Example",
         description:
           "Obtén información de los personajes de OnePiece por medio de una API",
-        icon: dartIcon,
+        icon: flutterIcon,
         link: "https://github.com/juanmadev5/onepieceapiexample",
       },
       {
         name: "Random Words",
         description: "Obtén palabras aleatorias desde una API",
-        icon: dartIcon,
+        icon: flutterIcon,
         link: "https://github.com/juanmadev5/flutter-random-words",
       },
     ],

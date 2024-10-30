@@ -8,25 +8,24 @@ import ProfileHeader from "./components/ProfileHeader";
 import Proyects from "./components/Proyects";
 import Stack from "./components/Stack";
 import TitleComponent from "./components/TitleComponent";
-import ProvideData from "./data/Data";
+import { appStrings } from "./data/Data";
 
 export default function App() {
-  const data = ProvideData();
-  document.title = data.title;
+  document.title = appStrings.title;
   const metaDesc = document.querySelector('meta[name="description"]');
-  metaDesc?.setAttribute("content", data.title);
+  metaDesc?.setAttribute("content", appStrings.title);
 
   return (
     <main className="overflow-x-hidden w-full flex flex-col items-center justify-center antialiased font-comfortaa bg-gradient-to-tr from-neutral-900 to-cyan-900">
       <div className="w-[700px] max-md:w-full p-2 max-md:p-0">
         <ProfileHeader />
-        <TitleComponent icon={icInfo} title={data.aboutMeDesc} />
+        <TitleComponent icon={icInfo} title={appStrings.aboutMeDesc} />
         <AboutMe />
-        <TitleComponent icon={icDev} title={data.technologiesDesc} />
+        <TitleComponent icon={icDev} title={appStrings.technologiesDesc} />
         <Stack />
-        <TitleComponent icon={icProyects} title={data.proyectsDesc} />
+        <TitleComponent icon={icProyects} title={appStrings.proyectsDesc} />
         <Proyects />
-        <TitleComponent icon={icEmail} title={data.contactMeDesc} />
+        <TitleComponent icon={icEmail} title={appStrings.contactMeDesc} />
         <Contact />
       </div>
     </main>

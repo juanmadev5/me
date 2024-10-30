@@ -1,11 +1,9 @@
-import ProvideData from "../data/Data";
+import { myData } from "../data/Data";
 
 export default function Social() {
-  const data = ProvideData();
-
   return (
     <div className="overflow-x-hidden w-auto h-8 mt-6 mx-2 flex flex-row">
-      {data.myData.socialLinks.map((item, index) => (
+      {myData.socialLinks.map((item, index) => (
         <a key={index} href={item.link} rel="noopener noreferrer">
           <img
             src={item.icon}

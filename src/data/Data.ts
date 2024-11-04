@@ -16,7 +16,7 @@ import contactMe from "../assets/ic-contactme.webp";
 export const myData = {
   devName: "JM Dev",
   fullName: "Juan Manuel Velázquez",
-  headerDescription: "Desarrollador Android y Web Full Stack",
+  headerDescription: "Desarrollador Android y Web Full",
   profilePhoto:
     "https://avatars.githubusercontent.com/u/115042535?s=400&u=62a596cea79ad50f38ed1e841b021acae7b7b79a&v=4",
   location: "Ciudad de Limpio, Paraguay",
@@ -78,6 +78,12 @@ export const myData = {
       description: "Obtén palabras aleatorias desde una API",
       icon: flutterIcon,
       link: "https://github.com/juanmadev5/flutter-random-words",
+    },
+    {
+      name: "Marketplace",
+      description: "En desarrollo!",
+      icon: icReact,
+      link: "",
     },
   ],
   socialLinks: [

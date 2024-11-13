@@ -8,6 +8,7 @@ import dartIcon from "../assets/ic-dart.webp";
 import sqlIcon from "../assets/ic-sql.webp";
 import icReact from "../assets/ic-react.webp";
 import icAndroid from "../assets/ic-android.webp";
+import icApi from "../assets/ic-api.webp";
 import instagramIcon from "../assets/ic-instagram.webp";
 import githubIcon from "../assets/ic-github.webp";
 import linkedinIcon from "../assets/ic-linkedin.webp";
@@ -52,6 +53,12 @@ export const myData = {
         "App de gestión de tareas con autenticación usando React y Firebase.",
       icon: icReact,
       link: "https://github.com/juanmadev5/express-task-plus",
+    },
+    {
+      name: "API de Control de Inventario",
+      description: "Una API sencilla para el control de inventarios, desarrollado con ExpressJS.",
+      icon: icApi,
+      link: "https://github.com/juanmadev5/inventory-system-api",
     },
     {
       name: "TicTacToe",

@@ -16,12 +16,12 @@ import contactMe from "../assets/ic-contactme.webp";
 export const myData = {
   devName: "JM Dev",
   fullName: "Juan Manuel Velázquez",
-  headerDescription: "Desarrollador Android y Web Full",
+  headerDescription: "Desarrollador Android y Web",
   profilePhoto:
     "https://avatars.githubusercontent.com/u/115042535?s=400&u=62a596cea79ad50f38ed1e841b021acae7b7b79a&v=4",
   location: "Ciudad de Limpio, Paraguay",
   aboutMeDescription:
-    "Estudiante de Ingeniería Informática y Técnico en Informática, desarrollador Android y Web Full Stack. Con más de 2 años de experiencia en proyectos personales, me enfoco en crear soluciones eficientes y mejorar la experiencia del usuario usando tecnologías modernas.",
+    "Estudiante de Ingeniería Informática y Técnico en Informática, desarrollador Android y Web. Con más de 2 años de experiencia en proyectos personales, me enfoco en crear soluciones eficientes y mejorar la experiencia del usuario usando tecnologías modernas.",
   myStack: [
     { name: "Jetpack Compose", icon: composeIcon },
     { name: "Flutter", icon: flutterIcon },
@@ -79,12 +79,6 @@ export const myData = {
       icon: flutterIcon,
       link: "https://github.com/juanmadev5/flutter-random-words",
     },
-    {
-      name: "Marketplace",
-      description: "En desarrollo!",
-      icon: icReact,
-      link: "",
-    },
   ],
   socialLinks: [
     {
@@ -111,6 +105,7 @@ export const myData = {
 }
 export const appStrings = {
   title: `Portafolio de ${myData.devName}`,
+  landingTitle: "Servicios",
   aboutMeDesc: "Acerca de mi",
   technologiesDesc: "Tecnologías que utilizo",
   proyectsDesc: "Mis Proyectos",

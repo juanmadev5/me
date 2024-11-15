@@ -4,11 +4,11 @@ import reactIcon from "../assets/ic-react.webp";
 import tsIcon from "../assets/ic-ts.webp";
 import tailwindIcon from "../assets/ic-tailwindcss.webp";
 import kotlinIcon from "../assets/ic-kotlin.webp";
-import dartIcon from "../assets/ic-dart.webp";
-import sqlIcon from "../assets/ic-sql.webp";
+import aspnetIcon from "../assets/ic-dotnet.webp";
 import icReact from "../assets/ic-react.webp";
 import icAndroid from "../assets/ic-android.webp";
 import icApi from "../assets/ic-api.webp";
+import icSupabase from "../assets/ic-supabase.webp";
 import instagramIcon from "../assets/ic-instagram.webp";
 import githubIcon from "../assets/ic-github.webp";
 import linkedinIcon from "../assets/ic-linkedin.webp";
@@ -25,13 +25,14 @@ export const myData = {
     "Estudiante de Ingeniería Informática y Técnico en Informática, desarrollador Android y Web. Con más de 2 años de experiencia en proyectos personales, me enfoco en crear soluciones eficientes y mejorar la experiencia del usuario usando tecnologías modernas.",
   myStack: [
     { name: "Jetpack Compose", icon: composeIcon },
-    { name: "Flutter", icon: flutterIcon },
     { name: "React", icon: reactIcon },
     { name: "TailwindCSS", icon: tailwindIcon },
-    { name: "Dart", icon: dartIcon },
-    { name: "Kotlin", icon: kotlinIcon },
-    { name: "MySQL", icon: sqlIcon },
     { name: "TypeScript", icon: tsIcon },
+    { name: "Supabase", icon: icSupabase },
+    { name: "Kotlin", icon: kotlinIcon },
+  ],
+  learning: [
+    {name: "Backend with ASP.NET Core", icon: aspnetIcon }
   ],
   myProyects: [
     {
@@ -114,7 +115,8 @@ export const appStrings = {
   title: `Portafolio de ${myData.devName}`,
   landingTitle: "Servicios",
   aboutMeDesc: "Acerca de mi",
-  technologiesDesc: "Tecnologías que utilizo",
+  technologiesDesc: "Tecnologías que más utilizo",
+  learning: "Aprendiendo actualmente",
   proyectsDesc: "Mis Proyectos",
   contactMeDesc: "Contáctame",
   iconLocationAlt: "Icono de ubicacion",

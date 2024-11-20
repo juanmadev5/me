@@ -5,6 +5,7 @@ import tsIcon from "../assets/ic-ts.webp";
 import tailwindIcon from "../assets/ic-tailwindcss.webp";
 import kotlinIcon from "../assets/ic-kotlin.webp";
 import aspnetIcon from "../assets/ic-dotnet.webp";
+import dockerIcon from "../assets/ic-docker.webp";
 import icReact from "../assets/ic-react.webp";
 import icAndroid from "../assets/ic-android.webp";
 import icApi from "../assets/ic-api.webp";
@@ -22,7 +23,7 @@ export const myData = {
     "https://avatars.githubusercontent.com/u/115042535?s=400&u=62a596cea79ad50f38ed1e841b021acae7b7b79a&v=4",
   location: "Ciudad de Limpio, Paraguay",
   aboutMeDescription:
-    "Estudiante de Ingeniería Informática y Técnico en Informática, desarrollador Android y Web. Con más de 2 años de experiencia en proyectos personales, me enfoco en crear soluciones eficientes y mejorar la experiencia del usuario usando tecnologías modernas.",
+    "Estudiante de Ingeniería Informática y Técnico en Informática, desarrollador Android y Web. Con más 2 años de experiencia en proyectos personales, me enfoco en crear soluciones eficientes y mejorar la experiencia del usuario usando tecnologías modernas.",
   myStack: [
     { name: "Jetpack Compose", icon: composeIcon },
     { name: "React", icon: reactIcon },
@@ -32,7 +33,8 @@ export const myData = {
     { name: "Kotlin", icon: kotlinIcon },
   ],
   learning: [
-    {name: "Backend with ASP.NET Core", icon: aspnetIcon }
+    { name: "ASP.NET Core", icon: aspnetIcon },
+    { name: "Docker", icon: dockerIcon },
   ],
   myProyects: [
     {
@@ -43,8 +45,7 @@ export const myData = {
     },
     {
       name: "Imagify",
-      description:
-        "App para buscar imágenes de Unsplash con Jetpack Compose.",
+      description: "App para buscar imágenes de Unsplash con Jetpack Compose.",
       icon: icAndroid,
       link: "https://github.com/juanmadev5/Imagify",
     },
@@ -57,7 +58,8 @@ export const myData = {
     },
     {
       name: "API de Control de Inventario",
-      description: "Una API sencilla para el control de inventarios, desarrollado con ExpressJS.",
+      description:
+        "Una API sencilla para el control de inventarios, desarrollado con ExpressJS.",
       icon: icApi,
       link: "https://github.com/juanmadev5/inventory-system-api",
     },
@@ -110,7 +112,7 @@ export const myData = {
       link: "#contact_section",
     },
   ],
-}
+};
 export const appStrings = {
   title: `Portafolio de ${myData.devName}`,
   landingTitle: "Servicios",
@@ -136,5 +138,5 @@ export const appStrings = {
   formEmailPH: "Tu correo",
   formMSJ: "Mensaje",
   formMSJPH: "Tu mensaje",
-  sendBtn: "Enviar"
-}
+  sendBtn: "Enviar",
+};

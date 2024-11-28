@@ -27,6 +27,7 @@ export const myData = {
   myStack: [
     { name: "Jetpack Compose", icon: composeIcon },
     { name: "React", icon: reactIcon },
+    { name: "Astro", icon: "https://img.icons8.com/nolan/50/astro-js.png" },
     { name: "TailwindCSS", icon: tailwindIcon },
     { name: "TypeScript", icon: tsIcon },
     { name: "Supabase", icon: icSupabase },
@@ -42,6 +43,12 @@ export const myData = {
       description: "Hecho con React y TailwindCSS.",
       icon: icReact,
       link: "https://github.com/juanmadev5/me",
+    },
+    {
+      name: "LearnWithMe",
+      description: "Un sitio web donde publico blogs enseñando algo en desarrollo web y movil.",
+      icon: "https://img.icons8.com/nolan/50/astro-js.png",
+      link: "https://github.com/juanmadev5/learn-with-me",
     },
     {
       name: "Imagify",

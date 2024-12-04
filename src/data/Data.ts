@@ -16,6 +16,7 @@ import linkedinIcon from "../assets/ic-linkedin.webp";
 import contactMe from "../assets/ic-contactme.webp";
 
 export const myData = {
+  available: "Full time",
   devName: "JM Dev",
   fullName: "Juan Manuel Velázquez",
   headerDescription: "Desarrollador Android y Web",

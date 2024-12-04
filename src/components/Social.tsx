@@ -2,7 +2,7 @@ import { myData } from "../data/Data";
 
 export default function Social() {
   return (
-    <div className="overflow-x-hidden w-auto h-12 mt-6 mx-2 flex flex-row items-center gap-1">
+    <div className="overflow-x-hidden w-auto h-12 mt-6 mx-3 flex flex-row items-center gap-1">
       {myData.socialLinks.map((item, index) => (
         <a className="p-1 rounded-xl" key={index} href={item.link} rel="noopener noreferrer">
           <img

@@ -4,7 +4,7 @@ import Social from "./Social";
 
 export default function ProfileHeader() {
   return (
-    <div className="overflow-x-hidden tracking-wide w-full flex flex-col h-auto py-8 rounded-xl max-md:rounded-none">
+    <div className="overflow-x-hidden tracking-wide w-full flex flex-col h-auto py-8">
       <div className="w-full h-auto flex py-2">
         <img
           className="ml-4 rounded-full w-28 h-28"
@@ -16,6 +16,9 @@ export default function ProfileHeader() {
       </p>
       <p className="w-full mx-4 mt-3 max-md:text-sm flex-wrap">
         {myData.headerDescription}
+      </p>
+      <p className="w-full mx-4 mt-4 max-md:text-sm flex-wrap text-xs">
+        Disponibilidad: {myData.available}
       </p>
       <div className="w-full mt-4 ml-3 flex flex-row max-md:text-sm">
         <img

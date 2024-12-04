@@ -26,6 +26,7 @@ export const myData = {
     "Estudiante de Ingeniería Informática y Técnico en Informática, desarrollador Android y Web. Con más 2 años de experiencia en proyectos personales, me enfoco en crear soluciones eficientes y mejorar la experiencia del usuario usando tecnologías modernas.",
   myStack: [
     { name: "Jetpack Compose", icon: composeIcon },
+    { name: "Flutter", icon: flutterIcon },
     { name: "React", icon: reactIcon },
     { name: "Astro", icon: "https://img.icons8.com/nolan/50/astro-js.png" },
     { name: "TailwindCSS", icon: tailwindIcon },
@@ -46,7 +47,7 @@ export const myData = {
     },
     {
       name: "LearnWithMe",
-      description: "Un sitio web donde publico blogs enseñando algo en desarrollo web y movil.",
+      description: "Un ejemplo de un blog, desarrollado con AstroJS",
       icon: "https://img.icons8.com/nolan/50/astro-js.png",
       link: "https://github.com/juanmadev5/learn-with-me",
     },
@@ -95,6 +96,12 @@ export const myData = {
       description: "Obtén palabras aleatorias desde una API",
       icon: flutterIcon,
       link: "https://github.com/juanmadev5/flutter-random-words",
+    },
+    {
+      name: "Weather",
+      description: "Una simple aplicación del clima que usa la API de openweathermap",
+      icon: flutterIcon,
+      link: "https://github.com/juanmadev5/weather",
     },
   ],
   socialLinks: [

@@ -23,7 +23,7 @@ export const myData = {
     "https://avatars.githubusercontent.com/u/115042535?s=400&u=62a596cea79ad50f38ed1e841b021acae7b7b79a&v=4",
   location: "Ciudad de Limpio, Paraguay",
   aboutMeDescription:
-    "Estudiante de Ingeniería Informática y Técnico en Informática, desarrollador Android y Web. Con más 2 años de experiencia en proyectos personales, me enfoco en crear soluciones eficientes y mejorar la experiencia del usuario usando tecnologías modernas.",
+    "Estudiante de Ingeniería Informática con experiencia en desarrollo Android y Web. Trabajo con herramientas y tecnologías modernas para diseñar soluciones eficientes que marcan la diferencia.",
   myStack: [
     { name: "Jetpack Compose", icon: composeIcon },
     { name: "Flutter", icon: flutterIcon },
@@ -99,7 +99,8 @@ export const myData = {
     },
     {
       name: "Weather",
-      description: "Una simple aplicación del clima que usa la API de openweathermap",
+      description:
+        "Una simple aplicación del clima que usa la API de openweathermap",
       icon: flutterIcon,
       link: "https://github.com/juanmadev5/weather",
     },

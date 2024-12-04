@@ -11,7 +11,7 @@ export default function ProfileHeader() {
           src={myData.profilePhoto}
         />
       </div>
-      <p className="w-full ml-4 mt-2 text-xl">
+      <p className="w-full ml-4 mt-2 text-2xl text-sky-500">
         {myData.fullName}
       </p>
       <p className="w-full mx-4 mt-3 max-md:text-sm flex-wrap">
@@ -19,7 +19,7 @@ export default function ProfileHeader() {
       </p>
       <div className="w-full mt-4 ml-3 flex flex-row max-md:text-sm">
         <img
-          className="max-md:w-5 max-md:h-5 w-5 h-5"
+          className="max-md:w-5 max-md:h-5 w-5 h-5 invert"
           src={locationIcon}
           alt={appStrings.iconLocationAlt}
         />

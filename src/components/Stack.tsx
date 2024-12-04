@@ -10,7 +10,7 @@ export default function Stack() {
           {myData.myStack.map((item, index) => (
             <div
               key={index}
-              className="h-auto p-2 m-1 inline-flex items-center border-[1px] rounded-2xl border-green-700"
+              className="h-auto p-2 m-1 flex flex-row justify-between items-center border rounded-2xl border-sky-800"
             >
               <img src={item.icon} className="w-6 h-6" alt={item.name} />
               <p className="text-xs mx-2">{item.name}</p>

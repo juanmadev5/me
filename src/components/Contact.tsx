@@ -39,7 +39,7 @@ export default function Contact() {
             id="name"
             name="from_name"
             autoComplete="true"
-            className="shadow appearance-none border-[1px] rounded-2xl w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring focus:border-green-300"
+            className="shadow appearance-none border-[1px] rounded-2xl w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring focus:border-sky-300"
             placeholder={appStrings.formNamePH}
             required
           />
@@ -54,7 +54,7 @@ export default function Contact() {
             id="email"
             name="from_email"
             autoComplete="true"
-            className="shadow appearance-none border-[1px] rounded-2xl w-full py-2 px-3 leading-tight focus:outline-none focus:ring focus:border-green-300"
+            className="shadow appearance-none border-[1px] rounded-2xl w-full py-2 px-3 leading-tight focus:outline-none focus:ring focus:border-sky-300"
             placeholder={appStrings.formEmailPH}
             required
           />
@@ -68,7 +68,7 @@ export default function Contact() {
             id="message"
             name="message"
             rows={4}
-            className="shadow appearance-none border-[1px] rounded-2xl w-full py-2 px-3 leading-tight focus:outline-none focus:ring focus:border-green-300"
+            className="shadow appearance-none border-[1px] rounded-2xl w-full py-2 px-3 leading-tight focus:outline-none focus:ring focus:border-sky-300"
             placeholder={appStrings.formMSJPH}
             required
           ></textarea>
@@ -78,7 +78,7 @@ export default function Contact() {
           <button
             id="send"
             type="submit"
-            className="bg-green-700 hover:bg-green-800 font-bold py-2 px-4 rounded-2xl focus:outline-none focus:shadow-outline"
+            className="bg-sky-700 hover:bg-sky-800 font-bold py-2 px-4 rounded-2xl focus:outline-none focus:shadow-outline"
           >
             <p className="text-white">{appStrings.sendBtn}</p>
           </button>

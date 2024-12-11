@@ -47,6 +47,12 @@ export const myData = {
       link: "https://github.com/juanmadev5/me",
     },
     {
+      name: "Random Info",
+      description: "Una API simple que devuelve información aleatoria. Desarrollado con ASP.NET Core y listo para usar en Docker",
+      icon: aspnetIcon,
+      link: "https://github.com/juanmadev5/randominfo",
+    },
+    {
       name: "LearnWithMe",
       description: "Un ejemplo de un blog, desarrollado con AstroJS",
       icon: "https://img.icons8.com/nolan/50/astro-js.png",

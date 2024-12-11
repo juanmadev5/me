@@ -3,12 +3,10 @@ import flutterIcon from "../assets/ic-flutter.webp";
 import reactIcon from "../assets/ic-react.webp";
 import tsIcon from "../assets/ic-ts.webp";
 import tailwindIcon from "../assets/ic-tailwindcss.webp";
-import kotlinIcon from "../assets/ic-kotlin.webp";
 import aspnetIcon from "../assets/ic-dotnet.webp";
 import dockerIcon from "../assets/ic-docker.webp";
 import icReact from "../assets/ic-react.webp";
 import icAndroid from "../assets/ic-android.webp";
-import icApi from "../assets/ic-api.webp";
 import icSupabase from "../assets/ic-supabase.webp";
 import instagramIcon from "../assets/ic-instagram.webp";
 import githubIcon from "../assets/ic-github.webp";
@@ -27,17 +25,17 @@ export const myData = {
     "Estudiante de Ingeniería Informática con experiencia en desarrollo Android y Web. Trabajo con herramientas y tecnologías modernas para diseñar soluciones eficientes que marcan la diferencia.",
   myStack: [
     { name: "Jetpack Compose", icon: composeIcon },
-    { name: "Flutter", icon: flutterIcon },
     { name: "React", icon: reactIcon },
-    { name: "Astro", icon: "https://img.icons8.com/nolan/50/astro-js.png" },
     { name: "TailwindCSS", icon: tailwindIcon },
     { name: "TypeScript", icon: tsIcon },
     { name: "Supabase", icon: icSupabase },
-    { name: "Kotlin", icon: kotlinIcon },
   ],
-  learning: [
+  know: [
     { name: "ASP.NET Core", icon: aspnetIcon },
     { name: "Docker", icon: dockerIcon },
+    { name: "Astro", icon: "https://img.icons8.com/nolan/50/astro-js.png" },
+    { name: "Flutter", icon: flutterIcon },
+    { name: "Python", icon: "https://img.icons8.com/color/48/python--v1.png" },
   ],
   myProyects: [
     {
@@ -63,46 +61,6 @@ export const myData = {
       description: "App para buscar imágenes de Unsplash con Jetpack Compose.",
       icon: icAndroid,
       link: "https://github.com/juanmadev5/Imagify",
-    },
-    {
-      name: "Express Task+",
-      description:
-        "App de gestión de tareas con autenticación usando React y Firebase.",
-      icon: icReact,
-      link: "https://github.com/juanmadev5/express-task-plus",
-    },
-    {
-      name: "API de Control de Inventario",
-      description:
-        "Una API sencilla para el control de inventarios, desarrollado con ExpressJS.",
-      icon: icApi,
-      link: "https://github.com/juanmadev5/inventory-system-api",
-    },
-    {
-      name: "TicTacToe",
-      description:
-        "Juego clásico con una interfaz simple usando Jetpack Compose.",
-      icon: icAndroid,
-      link: "https://github.com/juanmadev5/TicTacToe",
-    },
-    {
-      name: "ToDo Express",
-      description: "App sencilla para gestionar tareas con Jetpack Compose.",
-      icon: icAndroid,
-      link: "https://github.com/juanmadev5/ToDoExpress",
-    },
-    {
-      name: "OnePiece API Example",
-      description:
-        "Obtén información de los personajes de OnePiece por medio de una API",
-      icon: flutterIcon,
-      link: "https://github.com/juanmadev5/onepieceapiexample",
-    },
-    {
-      name: "Random Words",
-      description: "Obtén palabras aleatorias desde una API",
-      icon: flutterIcon,
-      link: "https://github.com/juanmadev5/flutter-random-words",
     },
     {
       name: "Weather",
@@ -140,8 +98,8 @@ export const appStrings = {
   landingTitle: "Servicios",
   aboutMeDesc: "Acerca de mi",
   technologiesDesc: "Tecnologías que más utilizo",
-  learning: "Aprendiendo actualmente",
-  proyectsDesc: "Mis Proyectos",
+  know: "Tecnologías que utilizo a veces",
+  proyectsDesc: "Proyectos destacados",
   contactMeDesc: "Contáctame",
   iconLocationAlt: "Icono de ubicacion",
   gotoRepo: "Ir al repositorio del proyecto",

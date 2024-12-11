@@ -9,7 +9,7 @@ import Proyects from "./components/Proyects";
 import Stack from "./components/Stack";
 import TitleComponent from "./components/TitleComponent";
 import { appStrings } from "./data/Data";
-import Learning from "./components/Learning";
+import Know from "./components/Know";
 
 export default function Home() {
     document.title = appStrings.title;
@@ -23,8 +23,8 @@ export default function Home() {
                 <AboutMe />
                 <TitleComponent icon={icDev} title={appStrings.technologiesDesc} />
                 <Stack />
-                <TitleComponent icon={icDev} title={appStrings.learning} />
-                <Learning />
+                <TitleComponent icon={icDev} title={appStrings.know} />
+                <Know />
                 <TitleComponent icon={icProyects} title={appStrings.proyectsDesc} />
                 <Proyects />
                 <TitleComponent icon={icEmail} title={appStrings.contactMeDesc} />

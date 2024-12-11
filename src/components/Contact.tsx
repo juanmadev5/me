@@ -54,7 +54,7 @@ export default function Contact() {
             id="email"
             name="from_email"
             autoComplete="true"
-            className="shadow appearance-none border-[1px] rounded-2xl w-full py-2 px-3 leading-tight focus:outline-none focus:ring focus:border-sky-300"
+            className="shadow appearance-none border-[1px] rounded-2xl w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring focus:border-sky-300"
             placeholder={appStrings.formEmailPH}
             required
           />
@@ -68,7 +68,7 @@ export default function Contact() {
             id="message"
             name="message"
             rows={4}
-            className="shadow appearance-none border-[1px] rounded-2xl w-full py-2 px-3 leading-tight focus:outline-none focus:ring focus:border-sky-300"
+            className="shadow appearance-none border-[1px] rounded-2xl w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring focus:border-sky-300"
             placeholder={appStrings.formMSJPH}
             required
           ></textarea>

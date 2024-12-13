@@ -48,10 +48,10 @@ export const myData = {
       name: "API de Sistema de Inventario",
       description: "Una API de control de inventario sencilla desarrollado con ExpressJS.",
       icon: "https://img.icons8.com/fluency/50/node-js.png",
-      link: "https://github.com/juanmadev5/randominfo",
+      link: "https://github.com/juanmadev5/inventory-system-api",
     },
     {
-      name: "Random Info",
+      name: "API de Información Aleatoria",
       description: "Una API simple que devuelve información aleatoria. Desarrollado con ASP.NET Core y listo para usar en Docker.",
       icon: aspnetIcon,
       link: "https://github.com/juanmadev5/randominfo",

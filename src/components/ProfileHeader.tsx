@@ -11,15 +11,23 @@ export default function ProfileHeader() {
           src={myData.profilePhoto}
         />
       </div>
-      <p className="w-full ml-4 mt-2 text-2xl text-sky-500">
+      <p className="ml-4 mt-2 text-2xl text-sky-500">
         {myData.fullName}
       </p>
-      <p className="w-full mx-4 mt-3 max-md:text-sm flex-wrap">
+      <p className="mx-4 mt-3 max-md:text-sm">
         {myData.headerDescription}
       </p>
       <p className="w-full mx-4 mt-4 max-md:text-sm flex-wrap text-xs">
-        Disponibilidad: {myData.available}
+        Disponibilidad:
       </p>
+      <ul className="w-full mx-4 mt-4 max-md:text-sm text-xs flex flex-wrap gap-1">
+        <li className="flex items-center border rounded-2xl border-sky-800">
+          <span className="m-2">🛠️ Proyectos freelance</span>
+        </li>
+        <li className="flex items-center border rounded-2xl border-sky-800">
+          <span className="m-2">💼 Oportunidades de tiempo completo</span>
+        </li>
+      </ul>
       <div className="w-full mt-4 ml-4 flex flex-row max-md:text-sm">
         <img
           className="max-md:w-5 max-md:h-5 w-5 h-5 invert"

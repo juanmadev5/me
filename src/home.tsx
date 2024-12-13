@@ -16,7 +16,7 @@ export default function Home() {
     const metaDesc = document.querySelector('meta[name="description"]');
     metaDesc?.setAttribute("content", appStrings.title);
     return (
-        <main className="overflow-x-hidden w-full flex flex-col items-center justify-center antialiased font-comfortaa bg-gradient-to-br from-gray-900 to-zinc-900 text-white">
+        <main className="w-full flex flex-col items-center justify-center antialiased tracking-wider font-comfortaa bg-gradient-to-br from-gray-900 to-zinc-900 text-white">
             <div className="w-[700px] max-md:w-full p-2 max-md:p-0">
                 <ProfileHeader />
                 <TitleComponent icon={icInfo} title={appStrings.aboutMeDesc} />

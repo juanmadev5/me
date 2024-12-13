@@ -14,15 +14,15 @@ import linkedinIcon from "../assets/ic-linkedin.webp";
 import contactMe from "../assets/ic-contactme.webp";
 
 export const myData = {
-  available: "Full time",
+  available: "Para proyectos freelance y oportunidades de tiempo completo.",
   devName: "JM Dev",
   fullName: "Juan Manuel Velázquez",
-  headerDescription: "Desarrollador Android y Web",
+  headerDescription: "Desarrollador Android y Web Full Stack en crecimiento.",
   profilePhoto:
     "https://avatars.githubusercontent.com/u/115042535?s=400&u=62a596cea79ad50f38ed1e841b021acae7b7b79a&v=4",
   location: "Ciudad de Limpio, Paraguay",
   aboutMeDescription:
-    "Estudiante de Ingeniería Informática con experiencia en desarrollo Android y Web. Trabajo con herramientas y tecnologías modernas para diseñar soluciones eficientes que marcan la diferencia.",
+    "Estudiante de Ingeniería Informática con experiencia en desarrollo Android y Web. Me apasiona aprender nuevas tecnologías y trabajar con herramientas modernas para diseñar soluciones eficientes que marcan la diferencia.",
   myStack: [
     { name: "Jetpack Compose", icon: composeIcon },
     { name: "React", icon: reactIcon },
@@ -45,14 +45,20 @@ export const myData = {
       link: "https://github.com/juanmadev5/me",
     },
     {
+      name: "API de Sistema de Inventario",
+      description: "Una API de control de inventario sencilla desarrollado con ExpressJS.",
+      icon: "https://img.icons8.com/fluency/50/node-js.png",
+      link: "https://github.com/juanmadev5/randominfo",
+    },
+    {
       name: "Random Info",
-      description: "Una API simple que devuelve información aleatoria. Desarrollado con ASP.NET Core y listo para usar en Docker",
+      description: "Una API simple que devuelve información aleatoria. Desarrollado con ASP.NET Core y listo para usar en Docker.",
       icon: aspnetIcon,
       link: "https://github.com/juanmadev5/randominfo",
     },
     {
       name: "LearnWithMe",
-      description: "Un ejemplo de un blog, desarrollado con AstroJS",
+      description: "Un ejemplo de un blog, desarrollado con AstroJS.",
       icon: "https://img.icons8.com/nolan/50/astro-js.png",
       link: "https://github.com/juanmadev5/learn-with-me",
     },
@@ -65,7 +71,7 @@ export const myData = {
     {
       name: "Weather",
       description:
-        "Una simple aplicación del clima que usa la API de openweathermap",
+        "Una simple aplicación del clima que usa la API de openweathermap.",
       icon: flutterIcon,
       link: "https://github.com/juanmadev5/weather",
     },
@@ -111,7 +117,7 @@ export const appStrings = {
   templateId: import.meta.env.VITE_EJS_TEMPLATE_ID,
   userId: import.meta.env.VITE_EJS_USER_ID,
   contactDesc:
-    "¿Tienes un proyecto en mente? ¡No dudes en contactarme y hagamos que esa idea cobre vida!",
+    "Si tienes un proyecto en mente o necesitas asesoría, ¡hablemos! Estoy listo para escuchar tus ideas y ayudarte a llevarlas al siguiente nivel.",
   formName: "Nombre",
   formNamePH: "Tu nombre",
   formEmail: "Correo Electrónico",

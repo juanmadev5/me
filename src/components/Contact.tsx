@@ -27,7 +27,7 @@ export default function Contact() {
       className="overflow-x-hidden flex items-center h-auto w-full max-md:flex-col max-md:mt-4"
     >
       <div className="mt-4">
-        <p className="text-left mx-8">{appStrings.contactDesc}</p>
+        <p className="text-left mx-8 md:w-64">{appStrings.contactDesc}</p>
       </div>
       <form id="form" className="p-8 w-full" onSubmit={sendEmail}>
         <div className="mb-4">

@@ -24,16 +24,17 @@ export const myData = {
   aboutMeDescription:
     "Estudiante de Ingeniería Informática con experiencia en desarrollo Android y Web. Me apasiona aprender nuevas tecnologías y trabajar con herramientas modernas para diseñar soluciones eficientes que marcan la diferencia.",
   myStack: [
-    { name: "Jetpack Compose", icon: composeIcon },
+    { name: "Node.js", icon: "https://img.icons8.com/fluency/50/node-js.png" },
     { name: "React", icon: reactIcon },
     { name: "TailwindCSS", icon: tailwindIcon },
-    { name: "TypeScript", icon: tsIcon },
     { name: "Supabase", icon: icSupabase },
+    { name: "Jetpack Compose", icon: composeIcon },
   ],
   know: [
+    { name: "Astro", icon: "https://img.icons8.com/nolan/50/astro-js.png" },
+    { name: "ExpressJS", icon: "https://img.icons8.com/office/40/express-js.png" },
     { name: "ASP.NET Core", icon: aspnetIcon },
     { name: "Docker", icon: dockerIcon },
-    { name: "Astro", icon: "https://img.icons8.com/nolan/50/astro-js.png" },
     { name: "Flutter", icon: flutterIcon },
     { name: "Python", icon: "https://img.icons8.com/color/48/python--v1.png" },
   ],

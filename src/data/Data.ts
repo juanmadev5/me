@@ -1,17 +1,19 @@
-import composeIcon from "../assets/ic-compose.webp";
-import flutterIcon from "../assets/ic-flutter.webp";
-import reactIcon from "../assets/ic-react.webp";
-import tsIcon from "../assets/ic-ts.webp";
-import tailwindIcon from "../assets/ic-tailwindcss.webp";
-import aspnetIcon from "../assets/ic-dotnet.webp";
-import dockerIcon from "../assets/ic-docker.webp";
-import icReact from "../assets/ic-react.webp";
-import icAndroid from "../assets/ic-android.webp";
-import icSupabase from "../assets/ic-supabase.webp";
-import instagramIcon from "../assets/ic-instagram.webp";
-import githubIcon from "../assets/ic-github.webp";
-import linkedinIcon from "../assets/ic-linkedin.webp";
-import contactMe from "../assets/ic-contactme.webp";
+import composeIcon from "/ic-compose.webp";
+import flutterIcon from "/ic-flutter.webp";
+import reactIcon from "/ic-react.webp";
+import tailwindIcon from "/ic-tailwindcss.webp";
+import aspnetIcon from "/ic-dotnet.webp";
+import dockerIcon from "/ic-docker.webp";
+import icAndroid from "/ic-android.webp";
+import icSupabase from "/ic-supabase.webp";
+import icNode from "/ic-node.webp";
+import icAstro from "/ic-astro.webp";
+import icExpress from "/ic-express.webp";
+import icPython from "/ic-python.webp";
+import instagramIcon from "/ic-instagram.webp";
+import githubIcon from "/ic-github.webp";
+import linkedinIcon from "/ic-linkedin.webp";
+import contactMe from "/ic-contactme.webp";
 
 export const myData = {
   available: "Para proyectos freelance y oportunidades de tiempo completo.",
@@ -24,31 +26,31 @@ export const myData = {
   aboutMeDescription:
     "Estudiante de Ingeniería Informática con experiencia en desarrollo Android y Web. Me apasiona aprender nuevas tecnologías y trabajar con herramientas modernas para diseñar soluciones eficientes que marcan la diferencia.",
   myStack: [
-    { name: "Node.js", icon: "https://img.icons8.com/fluency/50/node-js.png" },
+    { name: "Node.js", icon: icNode },
     { name: "React", icon: reactIcon },
     { name: "TailwindCSS", icon: tailwindIcon },
     { name: "Supabase", icon: icSupabase },
     { name: "Jetpack Compose", icon: composeIcon },
   ],
   know: [
-    { name: "Astro", icon: "https://img.icons8.com/nolan/50/astro-js.png" },
-    { name: "ExpressJS", icon: "https://img.icons8.com/office/40/express-js.png" },
+    { name: "Astro", icon: icAstro },
+    { name: "ExpressJS", icon: icExpress },
     { name: "ASP.NET Core", icon: aspnetIcon },
     { name: "Docker", icon: dockerIcon },
     { name: "Flutter", icon: flutterIcon },
-    { name: "Python", icon: "https://img.icons8.com/color/48/python--v1.png" },
+    { name: "Python", icon: icPython },
   ],
   myProyects: [
     {
       name: "Este portafolio",
       description: "Hecho con React y TailwindCSS.",
-      icon: icReact,
+      icon: reactIcon,
       link: "https://github.com/juanmadev5/me",
     },
     {
       name: "API de Sistema de Inventario",
       description: "Una API de control de inventario sencilla desarrollado con ExpressJS.",
-      icon: "https://img.icons8.com/fluency/50/node-js.png",
+      icon: icExpress,
       link: "https://github.com/juanmadev5/inventory-system-api",
     },
     {
@@ -60,7 +62,7 @@ export const myData = {
     {
       name: "LearnWithMe",
       description: "Un ejemplo de un blog, desarrollado con AstroJS.",
-      icon: "https://img.icons8.com/nolan/50/astro-js.png",
+      icon: icAstro,
       link: "https://github.com/juanmadev5/learn-with-me",
     },
     {

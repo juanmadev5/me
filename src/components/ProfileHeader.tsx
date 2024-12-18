@@ -1,4 +1,4 @@
-import locationIcon from "../assets/ic-location.webp";
+import locationIcon from "/ic-location.webp";
 import { appStrings, myData } from "../data/Data";
 import Social from "./Social";
 

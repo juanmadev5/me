@@ -10,6 +10,7 @@ import icNode from "/ic-node.webp";
 import icAstro from "/ic-astro.webp";
 import icExpress from "/ic-express.webp";
 import icPython from "/ic-python.webp";
+import icCode from "/ic-code.webp";
 import instagramIcon from "/ic-instagram.webp";
 import githubIcon from "/ic-github.webp";
 import linkedinIcon from "/ic-linkedin.webp";
@@ -46,6 +47,12 @@ export const myData = {
       description: "Hecho con React y TailwindCSS.",
       icon: reactIcon,
       link: "https://github.com/juanmadev5/me",
+    },
+    {
+      name: "Mini Proyects",
+      description: "Repositorio donde voy dejando pequeños proyectos, scripts y algoritmos en diferentes lenguajes de programación.",
+      icon: icCode,
+      link: "https://github.com/juanmadev5/Mini-Proyects",
     },
     {
       name: "API de Sistema de Inventario",

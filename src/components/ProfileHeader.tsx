@@ -18,7 +18,7 @@ export default function ProfileHeader() {
         {myData.headerDescription}
       </p>
       <p className="w-full mx-4 mt-4 max-md:text-sm flex-wrap text-xs text-sky-500">
-        Disponibilidad y horario:
+        Disponibilidad:
       </p>
       <ul className="w-full mx-4 mt-4 max-md:text-sm text-xs flex flex-wrap gap-1">
         <li className="flex items-center border rounded-2xl border-sky-800">

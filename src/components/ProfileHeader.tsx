@@ -17,8 +17,8 @@ export default function ProfileHeader() {
       <p className="mx-4 mt-3 max-md:text-sm">
         {myData.headerDescription}
       </p>
-      <p className="w-full mx-4 mt-4 max-md:text-sm flex-wrap text-xs">
-        Disponibilidad:
+      <p className="w-full mx-4 mt-4 max-md:text-sm flex-wrap text-xs text-sky-500">
+        Disponibilidad y horario:
       </p>
       <ul className="w-full mx-4 mt-4 max-md:text-sm text-xs flex flex-wrap gap-1">
         <li className="flex items-center border rounded-2xl border-sky-800">
@@ -26,6 +26,9 @@ export default function ProfileHeader() {
         </li>
         <li className="flex items-center border rounded-2xl border-sky-800">
           <span className="m-2">💼 Oportunidades de tiempo completo</span>
+        </li>
+        <li className="flex items-center border rounded-2xl border-sky-800">
+          <span className="m-2">🕒 Hasta las 17:30 hs</span>
         </li>
       </ul>
       <div className="w-full mt-4 ml-4 flex flex-row max-md:text-sm">

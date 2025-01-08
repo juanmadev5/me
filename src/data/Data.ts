@@ -19,7 +19,7 @@ export const myData = {
   available: "Para proyectos freelance y oportunidades de tiempo completo.",
   devName: "JM Dev",
   fullName: "Juan Manuel Velázquez",
-  headerDescription: "Desarrollador Android y Web Full Stack en crecimiento.",
+  headerDescription: "Desarrollador Android y Web Frontend",
   profilePhoto:
     "https://avatars.githubusercontent.com/u/115042535?s=400&u=62a596cea79ad50f38ed1e841b021acae7b7b79a&v=4",
   location: "Ciudad de Limpio, Paraguay",

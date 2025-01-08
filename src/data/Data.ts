@@ -49,10 +49,10 @@ export const myData = {
       link: "https://github.com/juanmadev5/me",
     },
     {
-      name: "Mini Proyects",
-      description: "Repositorio donde voy dejando pequeños proyectos, scripts y algoritmos en diferentes lenguajes de programación.",
+      name: "CodeCollection",
+      description: "Repositorio donde voy dejando codigos de demostración y scripts en diferentes lenguajes de programación que pueden ayudar a solucionar algún problema o aprender algo nuevo.",
       icon: icCode,
-      link: "https://github.com/juanmadev5/Mini-Proyects",
+      link: "https://github.com/juanmadev5/CodeCollection",
     },
     {
       name: "API de Sistema de Inventario",

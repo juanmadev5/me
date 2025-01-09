@@ -16,8 +16,8 @@ export default function Proyects() {
           <div className="flex flex-col items-start ml-4">
             <h3 className="text-sm mb-2">{project.name}</h3>
             <p className="text-sm mb-4">- {project.description}</p>
-            <a href={project.link} className="text-sm text-sky-400">
-              Ver en GiHub
+            <a href={project.link} className="transition-all text-sm text-sky-400 hover:font-semibold" target="_blank" rel="noreferrer">
+              Ver en GitHub
             </a>
           </div>
         </div>

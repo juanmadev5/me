@@ -3,56 +3,50 @@ import flutterIcon from "/ic-flutter.webp";
 import reactIcon from "/ic-react.webp";
 import tailwindIcon from "/ic-tailwindcss.webp";
 import aspnetIcon from "/ic-dotnet.webp";
-import dockerIcon from "/ic-docker.webp";
 import icAndroid from "/ic-android.webp";
-import icSupabase from "/ic-supabase.webp";
 import icNode from "/ic-node.webp";
 import icAstro from "/ic-astro.webp";
 import icExpress from "/ic-express.webp";
 import icPython from "/ic-python.webp";
 import icCode from "/ic-code.webp";
+import icJs from "/ic-js.webp";
+import icKotlin from "/ic-kotlin.webp";
 import instagramIcon from "/ic-instagram.webp";
 import githubIcon from "/ic-github.webp";
 import linkedinIcon from "/ic-linkedin.webp";
 import contactMe from "/ic-contactme.webp";
 
 export const myData = {
-  available: "Para proyectos freelance y oportunidades de tiempo completo.",
   devName: "JM Dev",
   fullName: "Juan Manuel Velázquez",
-  headerDescription: "Desarrollador Android y Web Frontend",
+  headerDescription: "Técnico Informático | Desarrollador Android | Desarrollador Web Frontend",
   profilePhoto:
     "https://avatars.githubusercontent.com/u/115042535?s=400&u=62a596cea79ad50f38ed1e841b021acae7b7b79a&v=4",
   location: "Ciudad de Limpio, Paraguay",
   aboutMeDescription:
-    "Estudiante de Ingeniería Informática con experiencia en desarrollo Android y Web. Me apasiona aprender nuevas tecnologías y trabajar con herramientas modernas para diseñar soluciones eficientes que marcan la diferencia.",
+    "Apasionado por crear soluciones digitales funcionales y atractivas. Transformo ideas en aplicaciones y sitios web que destacan por su diseño y rendimiento. 🚀",
   myStack: [
+    { name: "Android Jetpack Compose", icon: composeIcon },
+    { name: "Kotlin", icon: icKotlin },
     { name: "Node.js", icon: icNode },
     { name: "React", icon: reactIcon },
+    { name: "AstroJS", icon: icAstro },
     { name: "TailwindCSS", icon: tailwindIcon },
-    { name: "Supabase", icon: icSupabase },
-    { name: "Jetpack Compose", icon: composeIcon },
-  ],
-  know: [
-    { name: "Astro", icon: icAstro },
-    { name: "ExpressJS", icon: icExpress },
-    { name: "ASP.NET Core", icon: aspnetIcon },
-    { name: "Docker", icon: dockerIcon },
-    { name: "Flutter", icon: flutterIcon },
+    { name: "JS", icon: icJs },
     { name: "Python", icon: icPython },
   ],
   myProyects: [
-    {
-      name: "Este portafolio",
-      description: "Hecho con React y TailwindCSS.",
-      icon: reactIcon,
-      link: "https://github.com/juanmadev5/me",
-    },
     {
       name: "CodeCollection",
       description: "Repositorio donde voy dejando codigos de demostración y scripts en diferentes lenguajes de programación que pueden ayudar a solucionar algún problema o aprender algo nuevo.",
       icon: icCode,
       link: "https://github.com/juanmadev5/CodeCollection",
+    },
+    {
+      name: "Este portafolio",
+      description: "Hecho con React y TailwindCSS.",
+      icon: reactIcon,
+      link: "https://github.com/juanmadev5/me",
     },
     {
       name: "API de Sistema de Inventario",
@@ -68,20 +62,20 @@ export const myData = {
     },
     {
       name: "LearnWithMe",
-      description: "Un ejemplo de un blog, desarrollado con AstroJS.",
+      description: "Un ejemplo de un blog, desarrollado con AstroJS y TailwindCSS.",
       icon: icAstro,
       link: "https://github.com/juanmadev5/learn-with-me",
     },
     {
       name: "Imagify",
-      description: "App para buscar imágenes de Unsplash con Jetpack Compose.",
+      description: "Aplicación Android para buscar imágenes de Unsplash usando su API, desarrollado con Kotlin y Jetpack Compose.",
       icon: icAndroid,
       link: "https://github.com/juanmadev5/Imagify",
     },
     {
       name: "Weather",
       description:
-        "Una simple aplicación del clima que usa la API de openweathermap.",
+        "Una simple aplicación del clima que usa la API de openweathermap, desarrollado con Flutter.",
       icon: flutterIcon,
       link: "https://github.com/juanmadev5/weather",
     },
@@ -113,8 +107,7 @@ export const appStrings = {
   title: `Portafolio de ${myData.devName}`,
   landingTitle: "Servicios",
   aboutMeDesc: "Acerca de mi",
-  technologiesDesc: "Tecnologías que más utilizo",
-  know: "Tecnologías que utilizo a veces",
+  technologiesDesc: "Tecnologías que uso",
   proyectsDesc: "Proyectos destacados",
   contactMeDesc: "Contáctame",
   iconLocationAlt: "Icono de ubicacion",

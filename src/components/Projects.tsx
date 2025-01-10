@@ -4,7 +4,7 @@ import icArrowUp from "/ic-arrow-up.svg";
 import icArrowDown from "/ic-arrow-down.svg";
 import { strings } from "../app/Strings";
 
-export default function Proyects() {
+export default function Projects() {
   const [expanded, setExpanded] = useState(null);
 
   //@ts-ignore
@@ -13,7 +13,7 @@ export default function Proyects() {
   };
 
   return (
-    <div className="w-full flex flex-col mt-6 p-2 gap-4">
+    <div className="flex flex-col mt-6 p-2 gap-4 rounded-2xl mx-2">
       {data.myProyects.map((project, index) => {
         const isExpanded = expanded === index;
         return (
@@ -33,9 +33,13 @@ export default function Proyects() {
               <button
                 onClick={() => toggleExpand(index)}
                 aria-label={strings.descriptionButton}
-                className="ml-auto bg-sky-700 text-white text-xs px-2 py-2 rounded-lg hover:bg-sky-800 transition"
+                className="ml-auto bg-primary text-xs px-2 py-2 rounded-xl hover:bg-secondary transition"
               >
-                {isExpanded ? <img className="w-4 h-4 invert" src={icArrowUp}></img> : <img className="w-4 h-4 invert" src={icArrowDown}></img>}
+                {isExpanded ? (
+                  <img className="w-4 h-4" src={icArrowUp}></img>
+                ) : (
+                  <img className="w-4 h-4" src={icArrowDown}></img>
+                )}
               </button>
             </div>
             <div
@@ -44,11 +48,11 @@ export default function Proyects() {
                 maxHeight: isExpanded ? "200px" : "0",
               }}
             >
-              <div className="m-2">
+              <div className="m-2 mt-4">
                 <p className="text-sm mb-2">{project.description}</p>
                 <a
                   href={project.link}
-                  className="transition-all text-sm text-sky-400 hover:font-semibold"
+                  className="transition-all text-sm text-primary hover:font-semibold"
                   target="_blank"
                   rel="noreferrer"
                 >

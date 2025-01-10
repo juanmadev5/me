@@ -1,9 +1,9 @@
 import emailjs from "emailjs-com";
 import { service } from "../service/service";
 import { strings } from "../app/Strings";
+import icSend from "/ic-send.svg";
 
 export default function Contact() {
-
   function sendEmail(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
 
@@ -28,7 +28,9 @@ export default function Contact() {
       className="overflow-x-hidden flex items-center h-auto w-full max-md:flex-col max-md:mt-4"
     >
       <div className="mt-4">
-        <p className="text-left mx-8 md:w-64">{strings.contactDesc}</p>
+        <p className="max-md:text-center lg:text-start mx-8 md:w-64">
+          {strings.contactDesc}
+        </p>
       </div>
       <form id="form" className="p-8 w-full" onSubmit={sendEmail}>
         <div className="mb-4">
@@ -75,13 +77,13 @@ export default function Contact() {
           ></textarea>
         </div>
 
-        <div className="flex items-center justify-between">
+        <div className="flex items-center max-md:justify-start justify-end">
           <button
             id="send"
             type="submit"
-            className="bg-sky-700 hover:bg-sky-800 font-bold py-2 px-4 rounded-2xl focus:outline-none focus:shadow-outline"
+            className="bg-primary hover:bg-secondary font-bold py-2 px-4 rounded-3xl focus:outline-none focus:shadow-outline"
           >
-            <p className="text-white">{strings.sendBtn}</p>
+            <img src={icSend} className="invert"></img>
           </button>
         </div>
       </form>

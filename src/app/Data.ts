@@ -1,17 +1,13 @@
 import composeIcon from "/ic-compose.webp";
-import flutterIcon from "/ic-flutter.webp";
 import reactIcon from "/ic-react.webp";
 import tailwindIcon from "/ic-tailwindcss.webp";
-import aspnetIcon from "/ic-dotnet.webp";
 import icAndroid from "/ic-android.webp";
 import icNode from "/ic-node.webp";
 import icAstro from "/ic-astro.webp";
-import icExpress from "/ic-express.webp";
 import icPython from "/ic-python.webp";
 import icCode from "/ic-code.webp";
 import icJs from "/ic-js.webp";
 import icKotlin from "/ic-kotlin.webp";
-import instagramIcon from "/ic-instagram.webp";
 import githubIcon from "/ic-github.webp";
 import linkedinIcon from "/ic-linkedin.webp";
 import contactMe from "/ic-contactme.webp";
@@ -43,22 +39,16 @@ export const data = {
       link: "https://github.com/juanmadev5/CodeCollection",
     },
     {
+      name: "Imagify",
+      description: "Aplicación Android para buscar imágenes de Unsplash usando su API, desarrollado con Kotlin y Jetpack Compose.",
+      icon: icAndroid,
+      link: "https://github.com/juanmadev5/Imagify",
+    },
+    {
       name: "Este portafolio",
       description: "Desarrollado con Vite + React, TailwindCSS y TypeScript.",
       icon: reactIcon,
       link: "https://github.com/juanmadev5/me",
-    },
-    {
-      name: "API de Sistema de Inventario",
-      description: "Una API de control de inventario sencilla desarrollado con ExpressJS.",
-      icon: icExpress,
-      link: "https://github.com/juanmadev5/inventory-system-api",
-    },
-    {
-      name: "API de Información Aleatoria",
-      description: "Una API simple que devuelve información aleatoria. Desarrollado con ASP.NET Core y listo para usar en Docker.",
-      icon: aspnetIcon,
-      link: "https://github.com/juanmadev5/randominfo",
     },
     {
       name: "LearnWithMe",
@@ -66,26 +56,9 @@ export const data = {
       icon: icAstro,
       link: "https://github.com/juanmadev5/learn-with-me",
     },
-    {
-      name: "Imagify",
-      description: "Aplicación Android para buscar imágenes de Unsplash usando su API, desarrollado con Kotlin y Jetpack Compose.",
-      icon: icAndroid,
-      link: "https://github.com/juanmadev5/Imagify",
-    },
-    {
-      name: "Weather",
-      description:
-        "Una simple aplicación multiplataforma del clima que usa la API de openweathermap, desarrollado con Flutter.",
-      icon: flutterIcon,
-      link: "https://github.com/juanmadev5/weather",
-    },
+    
   ],
   socialLinks: [
-    {
-      name: "Instagram",
-      icon: instagramIcon,
-      link: "https://www.instagram.com/itz_juanmaa?igsh=MXBsY3B1c3NqbjV6NQ==",
-    },
     {
       name: "GitHub",
       icon: githubIcon,

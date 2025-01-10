@@ -40,7 +40,7 @@ export default function Proyects() {
                 maxHeight: isExpanded ? "200px" : "0",
               }}
             >
-              <div className="mt-4">
+              <div className="m-2">
                 <p className="text-sm mb-2">{project.description}</p>
                 <a
                   href={project.link}

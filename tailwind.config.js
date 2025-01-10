@@ -16,6 +16,7 @@ module.exports = {
         onBackground: "#e2e3d8",
         onPrimary: "#1f3701",
         onSecondary: "#2a331e",
+        primaryContainer: "#2a331e"
       }
     },
   },

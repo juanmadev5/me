@@ -42,7 +42,7 @@ export default function Contact() {
             id="name"
             name="from_name"
             autoComplete="true"
-            className="shadow appearance-none border-[1px] rounded-2xl w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring focus:border-sky-300"
+            className="bg-primaryContainer shadow appearance-none rounded-2xl w-full py-2 px-3 text-onBackground leading-tight focus:outline-none"
             placeholder={strings.formNamePH}
             required
           />
@@ -57,7 +57,7 @@ export default function Contact() {
             id="email"
             name="from_email"
             autoComplete="true"
-            className="shadow appearance-none border-[1px] rounded-2xl w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring focus:border-sky-300"
+            className="bg-primaryContainer shadow appearance-none rounded-2xl w-full py-2 px-3 text-onBackground leading-tight focus:outline-none"
             placeholder={strings.formEmailPH}
             required
           />
@@ -71,13 +71,13 @@ export default function Contact() {
             id="message"
             name="message"
             rows={4}
-            className="shadow appearance-none border-[1px] rounded-2xl w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring focus:border-sky-300"
+            className="rezise-none bg-primaryContainer shadow appearance-none rounded-2xl w-full py-2 px-3 text-onBackground leading-tight focus:outline-none"
             placeholder={strings.formMSJPH}
             required
           ></textarea>
         </div>
 
-        <div className="flex items-center max-md:justify-start justify-end">
+        <div className="flex items-center justify-end">
           <button
             id="send"
             type="submit"

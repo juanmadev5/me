@@ -9,6 +9,7 @@ export default function ProfileHeader() {
       <div className="w-full h-auto flex py-2">
         <img
           className="ml-4 rounded-full w-28 h-28"
+          alt={data.devName}
           src={data.profilePhoto}
         />
       </div>

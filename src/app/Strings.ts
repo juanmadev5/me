@@ -28,5 +28,6 @@ export const strings = {
         2: "🛠️ Proyectos freelance",
         3: "💼 Tiempo completo",
         4: "💻 Virtual o presencial"
-    }
+    },
+    descriptionButton: "Expandir o contraer descripción del proyecto"
 };

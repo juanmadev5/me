@@ -2,6 +2,7 @@ import { useState } from "react";
 import { data } from "../app/Data";
 import icArrowUp from "/ic-arrow-up.svg";
 import icArrowDown from "/ic-arrow-down.svg";
+import { strings } from "../app/Strings";
 
 export default function Proyects() {
   const [expanded, setExpanded] = useState(null);
@@ -22,13 +23,16 @@ export default function Proyects() {
           >
             <div className="flex flex-row items-center">
               <img
-                className="h-6 m-2 mt-1"
+                className="m-2 mt-1"
+                width="24px"
+                height="24px"
                 src={project.icon}
                 alt={`${project.name} icon`}
               />
               <h3 className="text-sm ml-2">{project.name}</h3>
               <button
                 onClick={() => toggleExpand(index)}
+                aria-label={strings.descriptionButton}
                 className="ml-auto bg-sky-700 text-white text-xs px-2 py-2 rounded-lg hover:bg-sky-800 transition"
               >
                 {isExpanded ? <img className="w-4 h-4 invert" src={icArrowUp}></img> : <img className="w-4 h-4 invert" src={icArrowDown}></img>}

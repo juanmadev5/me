@@ -9,7 +9,7 @@ export default function ProfileHeader() {
     <div className="tracking-wide flex flex-col h-auto py-2">
       <div className="w-full h-auto flex flex-col py-2 items-center gap-2">
         <img
-          className="ml-4 mt-8 rounded-3xl h-30 w-30 lg:w-44 lg:h-44"
+          className="ml-4 mt-8 rounded-3xl max-md:h-36 max-lg:h-40 xl:h-40"
           alt={data.devName}
           src={data.profilePhoto}
         />

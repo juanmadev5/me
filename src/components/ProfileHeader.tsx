@@ -1,6 +1,7 @@
 import locationIcon from "/ic-location.webp";
-import { appStrings, myData } from "../data/Data";
 import Social from "./Social";
+import { data } from "../app/Data";
+import { strings } from "../app/Strings";
 
 export default function ProfileHeader() {
   return (
@@ -8,39 +9,42 @@ export default function ProfileHeader() {
       <div className="w-full h-auto flex py-2">
         <img
           className="ml-4 rounded-full w-28 h-28"
-          src={myData.profilePhoto}
+          src={data.profilePhoto}
         />
       </div>
       <p className="ml-4 mt-2 text-2xl text-sky-500">
-        {myData.fullName}
+        {data.fullName}
       </p>
       <p className="mx-4 mt-3 max-md:text-sm">
-        {myData.headerDescription}
+        {data.headerDescription}
       </p>
 
       <div className="mt-4 ml-4 flex flex-row max-md:text-sm">
         <img
           className="max-md:w-5 max-md:h-5 w-5 h-5 invert"
           src={locationIcon}
-          alt={appStrings.iconLocationAlt}
+          alt={strings.iconLocationAlt}
         />
         <p className="ml-2 " translate="no">
-          {myData.location}
+          {data.location}
         </p>
       </div>
       <Social />
       <p className="mx-4 mt-4 max-md:text-sm flex-wrap text-xs text-sky-500">
-        Disponibilidad:
+        {strings.available}
       </p>
       <ul className="mx-4 mt-4 max-md:text-sm text-xs flex flex-wrap gap-2">
         <li className="flex items-center border rounded-2xl border-sky-800">
-          <span className="m-2">🕒 Hasta las 17:30 hs</span>
+          <span className="m-2">{strings.availability[1]}</span>
         </li>
         <li className="flex items-center border rounded-2xl border-sky-800">
-          <span className="m-2">🛠️ Proyectos freelance</span>
+          <span className="m-2">{strings.availability[2]}</span>
         </li>
         <li className="flex items-center border rounded-2xl border-sky-800">
-          <span className="m-2">💼 Tiempo completo</span>
+          <span className="m-2">{strings.availability[3]}</span>
+        </li>
+        <li className="flex items-center border rounded-2xl border-sky-800">
+          <span className="m-2">{strings.availability[4]}</span>
         </li>
       </ul>
     </div>

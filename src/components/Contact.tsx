@@ -1,5 +1,6 @@
 import emailjs from "emailjs-com";
-import { appStrings } from "../data/Data";
+import { service } from "../service/service";
+import { strings } from "../app/Strings";
 
 export default function Contact() {
 
@@ -8,16 +9,16 @@ export default function Contact() {
 
     emailjs
       .sendForm(
-        appStrings.serviceId,
-        appStrings.templateId,
+        service.serviceId,
+        service.templateId,
         event.currentTarget,
-        appStrings.userId
+        service.userId
       )
       .then(() => {
-        alert(appStrings.alertSended);
+        alert(strings.alertSended);
       })
       .catch(() => {
-        alert(appStrings.alertError);
+        alert(strings.alertError);
       });
   }
 
@@ -27,12 +28,12 @@ export default function Contact() {
       className="overflow-x-hidden flex items-center h-auto w-full max-md:flex-col max-md:mt-4"
     >
       <div className="mt-4">
-        <p className="text-left mx-8 md:w-64">{appStrings.contactDesc}</p>
+        <p className="text-left mx-8 md:w-64">{strings.contactDesc}</p>
       </div>
       <form id="form" className="p-8 w-full" onSubmit={sendEmail}>
         <div className="mb-4">
           <label className="block text-sm mb-2" htmlFor="name">
-            {appStrings.formName}
+            {strings.formName}
           </label>
           <input
             type="text"
@@ -40,14 +41,14 @@ export default function Contact() {
             name="from_name"
             autoComplete="true"
             className="shadow appearance-none border-[1px] rounded-2xl w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring focus:border-sky-300"
-            placeholder={appStrings.formNamePH}
+            placeholder={strings.formNamePH}
             required
           />
         </div>
 
         <div className="mb-4">
           <label className="block text-sm mb-2" htmlFor="email">
-            {appStrings.formEmail}
+            {strings.formEmail}
           </label>
           <input
             type="email"
@@ -55,21 +56,21 @@ export default function Contact() {
             name="from_email"
             autoComplete="true"
             className="shadow appearance-none border-[1px] rounded-2xl w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring focus:border-sky-300"
-            placeholder={appStrings.formEmailPH}
+            placeholder={strings.formEmailPH}
             required
           />
         </div>
 
         <div className="mb-4">
           <label className="block text-sm mb-2" htmlFor="message">
-            {appStrings.formMSJ}
+            {strings.formMSJ}
           </label>
           <textarea
             id="message"
             name="message"
             rows={4}
             className="shadow appearance-none border-[1px] rounded-2xl w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring focus:border-sky-300"
-            placeholder={appStrings.formMSJPH}
+            placeholder={strings.formMSJPH}
             required
           ></textarea>
         </div>
@@ -80,7 +81,7 @@ export default function Contact() {
             type="submit"
             className="bg-sky-700 hover:bg-sky-800 font-bold py-2 px-4 rounded-2xl focus:outline-none focus:shadow-outline"
           >
-            <p className="text-white">{appStrings.sendBtn}</p>
+            <p className="text-white">{strings.sendBtn}</p>
           </button>
         </div>
       </form>

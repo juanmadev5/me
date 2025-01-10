@@ -16,7 +16,7 @@ import githubIcon from "/ic-github.webp";
 import linkedinIcon from "/ic-linkedin.webp";
 import contactMe from "/ic-contactme.webp";
 
-export const myData = {
+export const data = {
   devName: "JM Dev",
   fullName: "Juan Manuel Velázquez",
   headerDescription: "Técnico Informático | Desarrollador Android | Desarrollador Web Frontend",
@@ -44,7 +44,7 @@ export const myData = {
     },
     {
       name: "Este portafolio",
-      description: "Hecho con React y TailwindCSS.",
+      description: "Desarrollado con Vite + React, TailwindCSS y TypeScript.",
       icon: reactIcon,
       link: "https://github.com/juanmadev5/me",
     },
@@ -75,7 +75,7 @@ export const myData = {
     {
       name: "Weather",
       description:
-        "Una simple aplicación del clima que usa la API de openweathermap, desarrollado con Flutter.",
+        "Una simple aplicación multiplataforma del clima que usa la API de openweathermap, desarrollado con Flutter.",
       icon: flutterIcon,
       link: "https://github.com/juanmadev5/weather",
     },
@@ -102,30 +102,4 @@ export const myData = {
       link: "#contact_section",
     },
   ],
-};
-export const appStrings = {
-  title: `Portafolio de ${myData.devName}`,
-  landingTitle: "Servicios",
-  aboutMeDesc: "Acerca de mi",
-  technologiesDesc: "Tecnologías que uso",
-  proyectsDesc: "Proyectos destacados",
-  contactMeDesc: "Contáctame",
-  iconLocationAlt: "Icono de ubicacion",
-  gotoRepo: "Ir al repositorio del proyecto",
-  seeOnGH: "Ver en GitHub",
-  alertSended:
-    "¡Mensaje enviado exitosamente. Te responderé lo más rápido posible!",
-  alertError: "Hubo un problema al enviar el mensaje. Intenta nuevamente.",
-  serviceId: import.meta.env.VITE_EJS_SERVICE_ID,
-  templateId: import.meta.env.VITE_EJS_TEMPLATE_ID,
-  userId: import.meta.env.VITE_EJS_USER_ID,
-  contactDesc:
-    "Si tienes un proyecto en mente o necesitas asesoría, ¡hablemos! Estoy listo para escuchar tus ideas y ayudarte a llevarlas al siguiente nivel.",
-  formName: "Nombre",
-  formNamePH: "Tu nombre",
-  formEmail: "Correo Electrónico",
-  formEmailPH: "Tu correo",
-  formMSJ: "Mensaje",
-  formMSJPH: "Tu mensaje",
-  sendBtn: "Enviar",
 };

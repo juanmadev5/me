@@ -1,9 +1,9 @@
-import { myData } from "../data/Data";
+import { data } from "../app/Data";
 
 export default function Social() {
   return (
     <div className="h-12 mt-2 mx-3 flex flex-row items-center gap-1">
-      {myData.socialLinks.map((item, index) => (
+      {data.socialLinks.map((item, index) => (
         <a className="p-1 rounded-xl" key={index} href={item.link} rel="noopener noreferrer">
           <img
             src={item.icon}

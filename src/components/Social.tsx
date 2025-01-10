@@ -12,7 +12,7 @@ export default function Social() {
           />
         </a>
       ))}
-      <a href="https://1drv.ms/b/c/db6bb5dd184712e5/EUUAcccBBmdNkg8njIeF-hoBS1QMENlYO9MzV5xKJmTxdw?e=5fjm0W" className="ml-4 text-xs text-sky-500">Mi CV</a>
+      <a href="https://drive.google.com/file/d/10u5nQp08dynd3C_7DuViF8Vq-jBoK-Cv/view?usp=sharing" className="ml-4 text-xs text-sky-500">Mi CV</a>
     </div>
   );
 }

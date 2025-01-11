@@ -13,14 +13,12 @@ import TitleComponent from "./components/TitleComponent";
 import { strings } from "./app/Strings";
 import HorizontalDivider from "./components/HorizontalDivider";
 
-createRoot(document.getElementById("root")!).render(<Home />);
-export default function Home() {
-  document.title = strings.title;
-  const metaDesc = document.querySelector('meta[name="description"]');
-  metaDesc?.setAttribute("content", strings.title);
+document.title = strings.title;
+const metaDesc = document.querySelector('meta[name="description"]');
+metaDesc?.setAttribute("content", strings.title);
 
-  return (
-    <main className="bg-background flex flex-col items-center justify-center antialiased tracking-wide font-comfortaa text-white">
+createRoot(document.getElementById("root")!).render(
+  <main className="bg-background flex flex-col items-center justify-center antialiased tracking-wide font-comfortaa text-white">
       <div className="w-[700px] max-md:w-full p-2 max-md:p-0">
         <ProfileHeader />
         <HorizontalDivider />
@@ -37,5 +35,4 @@ export default function Home() {
         <Contact />
       </div>
     </main>
-  );
-}
+);

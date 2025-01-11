@@ -74,7 +74,7 @@ export const data = {
     {
       name: "Contactame",
       icon: contactMe,
-      link: "#contact_section",
+      link: "#form",
     },
   ],
 };

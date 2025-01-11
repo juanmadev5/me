@@ -1,18 +1,21 @@
 import emailjs from "emailjs-com";
-import { service } from "../service/service";
 import { strings } from "../app/Strings";
 import icSend from "/ic-send.svg";
 
 export default function Contact() {
+  const serviceId = import.meta.env.VITE_EJS_SERVICE_ID
+  const templateId = import.meta.env.VITE_EJS_TEMPLATE_ID
+  const userId = import.meta.env.VITE_EJS_USER_ID
+
   function sendEmail(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
 
     emailjs
       .sendForm(
-        service.serviceId,
-        service.templateId,
+        serviceId,
+        templateId,
         event.currentTarget,
-        service.userId
+        userId
       )
       .then(() => {
         alert(strings.alertSended);
@@ -23,16 +26,7 @@ export default function Contact() {
   }
 
   return (
-    <div
-      id="contact_section"
-      className="overflow-x-hidden flex items-center h-auto w-full max-md:flex-col max-md:mt-4"
-    >
-      <div className="mt-4">
-        <p className="max-md:text-center lg:text-start mx-8 md:w-64 text-onSurface">
-          {strings.contactDesc}
-        </p>
-      </div>
-      <form id="form" className="p-8 w-full" onSubmit={sendEmail}>
+    <form id="form" className="p-8 sm:mx-0 max-md:mx-2 xl:mx-32" onSubmit={sendEmail}>
         <div className="mb-4">
           <label className="block text-sm mb-2 text-onSurface" htmlFor="name">
             {strings.formName}
@@ -42,7 +36,7 @@ export default function Contact() {
             id="name"
             name="from_name"
             autoComplete="true"
-            className="bg-onSecondary shadow appearance-none rounded-2xl w-full py-2 px-3 text-onBackground leading-tight focus:outline-none"
+            className="bg-onSecondary shadow appearance-none rounded-2xl w-full py-2 px-3 text-onSurface leading-tight focus:outline-none"
             placeholder={strings.formNamePH}
             required
           />
@@ -57,7 +51,7 @@ export default function Contact() {
             id="email"
             name="from_email"
             autoComplete="true"
-            className="bg-onSecondary shadow appearance-none rounded-2xl w-full py-2 px-3 text-onBackground leading-tight focus:outline-none"
+            className="bg-onSecondary shadow appearance-none rounded-2xl w-full py-2 px-3 text-onSurface leading-tight focus:outline-none"
             placeholder={strings.formEmailPH}
             required
           />
@@ -71,7 +65,7 @@ export default function Contact() {
             id="message"
             name="message"
             rows={4}
-            className="rezise-none bg-onSecondary shadow appearance-none rounded-2xl w-full py-2 px-3 text-onBackground leading-tight focus:outline-none"
+            className="rezise-none bg-onSecondary shadow appearance-none rounded-2xl w-full py-2 px-3 text-onSurface leading-tight focus:outline-none"
             placeholder={strings.formMSJPH}
             required
           ></textarea>
@@ -87,6 +81,5 @@ export default function Contact() {
           </button>
         </div>
       </form>
-    </div>
   );
 }

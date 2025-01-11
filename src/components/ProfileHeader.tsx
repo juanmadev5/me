@@ -2,14 +2,13 @@ import locationIcon from "/ic-location.svg";
 import Social from "./Social";
 import { data } from "../app/Data";
 import { strings } from "../app/Strings";
-import HorizontalDivider from "./HorizontalDivider";
 
 export default function ProfileHeader() {
   return (
     <div className="tracking-wide flex flex-col h-auto py-2">
       <div className="w-full h-auto flex flex-col py-2 items-center gap-2">
         <img
-          className="ml-4 mt-8 border-4 border-primary rounded-full max-md:h-36 max-lg:h-40 xl:h-40"
+          className="ml-4 mt-8 border-4 border-primary rounded-full h-36"
           alt={data.devName}
           src={data.profilePhoto}
         />
@@ -28,24 +27,6 @@ export default function ProfileHeader() {
           </p>
         </div>
         <Social />
-      </div>
-      <HorizontalDivider />
-      <div className="w-full flex flex-col items-center">
-        <h2 className="mx-4 mt-2 flex-wrap text-primary">
-          {strings.available}
-        </h2>
-        <ul className="mx-4 mt-4 max-md:text-sm text-xs flex flex-wrap gap-2 justify-center">
-          {Object.values(strings.availability)
-            .slice(0, 3)
-            .map((item, index) => (
-              <li
-                key={index}
-                className="flex items-center rounded-2xl bg-onSecondary"
-              >
-                <span className="m-2">{item}</span>
-              </li>
-            ))}
-        </ul>
       </div>
     </div>
   );

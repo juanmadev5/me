@@ -28,13 +28,13 @@ export default function Contact() {
       className="overflow-x-hidden flex items-center h-auto w-full max-md:flex-col max-md:mt-4"
     >
       <div className="mt-4">
-        <p className="max-md:text-center lg:text-start mx-8 md:w-64">
+        <p className="max-md:text-center lg:text-start mx-8 md:w-64 text-onSurface">
           {strings.contactDesc}
         </p>
       </div>
       <form id="form" className="p-8 w-full" onSubmit={sendEmail}>
         <div className="mb-4">
-          <label className="block text-sm mb-2" htmlFor="name">
+          <label className="block text-sm mb-2 text-onSurface" htmlFor="name">
             {strings.formName}
           </label>
           <input
@@ -42,14 +42,14 @@ export default function Contact() {
             id="name"
             name="from_name"
             autoComplete="true"
-            className="bg-primaryContainer shadow appearance-none rounded-2xl w-full py-2 px-3 text-onBackground leading-tight focus:outline-none"
+            className="bg-onSecondary shadow appearance-none rounded-2xl w-full py-2 px-3 text-onBackground leading-tight focus:outline-none"
             placeholder={strings.formNamePH}
             required
           />
         </div>
 
         <div className="mb-4">
-          <label className="block text-sm mb-2" htmlFor="email">
+          <label className="block text-sm mb-2 text-onSurface" htmlFor="email">
             {strings.formEmail}
           </label>
           <input
@@ -57,21 +57,21 @@ export default function Contact() {
             id="email"
             name="from_email"
             autoComplete="true"
-            className="bg-primaryContainer shadow appearance-none rounded-2xl w-full py-2 px-3 text-onBackground leading-tight focus:outline-none"
+            className="bg-onSecondary shadow appearance-none rounded-2xl w-full py-2 px-3 text-onBackground leading-tight focus:outline-none"
             placeholder={strings.formEmailPH}
             required
           />
         </div>
 
         <div className="mb-4">
-          <label className="block text-sm mb-2" htmlFor="message">
+          <label className="block text-sm mb-2 text-onSurface" htmlFor="message">
             {strings.formMSJ}
           </label>
           <textarea
             id="message"
             name="message"
             rows={4}
-            className="rezise-none bg-primaryContainer shadow appearance-none rounded-2xl w-full py-2 px-3 text-onBackground leading-tight focus:outline-none"
+            className="rezise-none bg-onSecondary shadow appearance-none rounded-2xl w-full py-2 px-3 text-onBackground leading-tight focus:outline-none"
             placeholder={strings.formMSJPH}
             required
           ></textarea>

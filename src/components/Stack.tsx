@@ -8,7 +8,7 @@ export default function Stack() {
         {data.myStack.map((item, index) => (
           <div
             key={index}
-            className="p-2 m-1 flex flex-row justify-between items-center border rounded-2xl border-onBackground gap-2"
+            className="p-2 m-1 flex flex-row justify-between items-center rounded-2xl bg-onSecondary gap-2"
           >
             <img
               src={item.icon}

@@ -29,7 +29,7 @@ export default function Projects() {
                 src={project.icon}
                 alt={`${project.name} icon`}
               />
-              <h3 className="text-sm ml-2">{project.name}</h3>
+              <h3 className="text-sm ml-2 text-onSurface">{project.name}</h3>
               <button
                 onClick={() => toggleExpand(index)}
                 aria-label={strings.descriptionButton}
@@ -49,7 +49,7 @@ export default function Projects() {
               }}
             >
               <div className="m-2 mt-4">
-                <p className="text-sm mb-2">{project.description}</p>
+                <p className="text-sm mb-2 text-onSurface">{project.description}</p>
                 <a
                   href={project.link}
                   className="transition-all text-sm text-primary hover:font-semibold"

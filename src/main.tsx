@@ -11,7 +11,7 @@ import Projects from "./components/Projects";
 import Stack from "./components/Stack";
 import TitleComponent from "./components/TitleComponent";
 import { strings } from "./app/Strings";
-import HorizontalDivider from "./components/core/HorizontalDivider";
+import HorizontalDivider from "./components/HorizontalDivider";
 
 createRoot(document.getElementById("root")!).render(<Home />);
 export default function Home() {
@@ -36,9 +36,6 @@ export default function Home() {
         <TitleComponent icon={icEmail} title={strings.contactMeDesc} />
         <Contact />
       </div>
-      <footer className="justify-center m-4 items-center">
-        <span className="text-[10px] text-secondary">Portafolio con estilo Material Design</span>
-      </footer>
     </main>
   );
 }

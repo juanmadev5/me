@@ -3,7 +3,7 @@ import { data } from "./Data";
 export const strings = {
     title: `Portafolio de ${data.devName}`,
     landingTitle: "Servicios",
-    aboutMeDesc: "Acerca de mi",
+    aboutMeDesc: "Sobre mí",
     technologiesDesc: "Tecnologías que uso",
     proyectsDesc: "Proyectos destacados",
     contactMeDesc: "Contáctame",
@@ -26,8 +26,7 @@ export const strings = {
     availability: {
         1: "🕒 Hasta las 17:30 hs",
         2: "🛠️ Proyectos freelance",
-        3: "💼 Tiempo completo",
-        4: "💻 Virtual o presencial"
+        3: "💼 Tiempo completo"
     },
     descriptionButton: "Expandir o contraer descripción del proyecto"
 };

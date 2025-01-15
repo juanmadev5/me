@@ -33,12 +33,12 @@ export default function Projects() {
               <button
                 onClick={() => toggleExpand(index)}
                 aria-label={strings.descriptionButton}
-                className="ml-auto bg-primary text-xs px-2 py-2 rounded-xl hover:bg-secondary transition"
+                className="ml-auto bg-onSecondary text-xs px-2 py-2 rounded-xl"
               >
                 {isExpanded ? (
-                  <img className="w-4 h-4" src={icArrowUp}></img>
+                  <img className="w-4 h-4 invert" src={icArrowUp}></img>
                 ) : (
-                  <img className="w-4 h-4" src={icArrowDown}></img>
+                  <img className="w-4 h-4 invert" src={icArrowDown}></img>
                 )}
               </button>
             </div>

@@ -5,8 +5,9 @@ import icAndroid from "/ic-android.webp";
 import icAstro from "/ic-astro.webp";
 import icPython from "/ic-python.webp";
 import icCode from "/ic-code.webp";
-import icJs from "/ic-js.webp";
+import icTs from "/ic-ts.webp";
 import icKotlin from "/ic-kotlin.webp";
+import icKtor from "/ic-ktor.webp";
 import githubIcon from "/ic-github.webp";
 import linkedinIcon from "/ic-linkedin.webp";
 import contactMe from "/ic-contactme.webp";
@@ -22,13 +23,14 @@ export const data = {
   aboutMeDescription:
     "Soy un desarrollador apasionado por crear aplicaciones y sitios web modernos, intuitivos y funcionales. Mi objetivo es combinar diseño atractivo con tecnología para brindar experiencias excepcionales a los usuarios.",
   myStack: [
-    { name: "Android Jetpack Compose", icon: composeIcon },
-    { name: "Kotlin", icon: icKotlin },
-    { name: "React", icon: reactIcon },
-    { name: "AstroJS", icon: icAstro },
-    { name: "TailwindCSS", icon: tailwindIcon },
-    { name: "JS", icon: icJs },
-    { name: "Python", icon: icPython },
+    { name: "Android Jetpack Compose", icon: composeIcon, moreInfo: "https://developer.android.com/compose" },
+    { name: "Kotlin", icon: icKotlin, moreInfo: "https://kotlinlang.org/" },
+    { name: "Ktor", icon: icKtor, moreInfo: "https://ktor.io/" },
+    { name: "React", icon: reactIcon, moreInfo: "https://react.dev/" },
+    { name: "AstroJS", icon: icAstro, moreInfo: "https://astro.build/" },
+    { name: "TailwindCSS", icon: tailwindIcon, moreInfo: "https://tailwindcss.com/" },
+    { name: "TS", icon: icTs, moreInfo: "https://www.typescriptlang.org/" },
+    { name: "Python", icon: icPython, moreInfo: "https://www.python.org/" },
   ],
   myProyects: [
     {

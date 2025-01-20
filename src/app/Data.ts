@@ -41,6 +41,13 @@ export const data = {
       link: "https://github.com/juanmadev5/CodeCollection",
     },
     {
+      name: "Simple WordToPDF",
+      description:
+        "Script de Python que convierte archivos Word a PDF en segundos.",
+      icon: icPython,
+      link: "https://github.com/juanmadev5/CodeCollection/blob/main/Python/3%20-%20wordToPdf.py",
+    },
+    {
       name: "Imagify",
       description:
         "Aplicación Android avanzada para búsqueda y descarga de imágenes desde unsplash.com, desarrollado con Kotlin y Jetpack Compose.",
@@ -50,7 +57,7 @@ export const data = {
     {
       name: "Este portafolio",
       description:
-        "Este portafolio es una muestra de mis habilidades como desarrollador, incluyendo mis proyectos y experiencias. Desarrollado con React, TailwindCSS y TypeScript. Diseño: Material You",
+        "Este portafolio es una muestra de mis habilidades como desarrollador, incluyendo mis proyectos y experiencias. Desarrollado con React, TailwindCSS y TypeScript. Diseño: Material You.",
       icon: reactIcon,
       link: "https://github.com/juanmadev5/me",
     },

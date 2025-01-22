@@ -32,7 +32,7 @@ function App() {
   }, []);
 
   return (
-    <main className="flex flex-col items-center justify-center antialiased tracking-wide font-comfortaa text-white">
+    <main className="bg-background flex flex-col items-center justify-center antialiased tracking-wide font-comfortaa text-white">
       <div
         className={`w-[700px] max-md:w-full p-2 max-md:p-0 transition-opacity duration-500 ${
           showContent ? "opacity-100" : "opacity-0"

@@ -49,7 +49,9 @@ export default function Projects() {
               }}
             >
               <div className="m-2 mt-4">
-                <p className="text-sm mb-2 text-onSurface">{project.description}</p>
+                <p className="text-sm mb-2 text-onSurface">
+                  {project.description}
+                </p>
                 <a
                   href={project.link}
                   className="transition-all text-sm text-primary hover:font-semibold"

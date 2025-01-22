@@ -8,11 +8,11 @@ export default function ProfileHeader() {
     <div className="tracking-wide flex flex-col h-auto py-2">
       <div className="w-full h-auto flex flex-col py-2 items-center gap-2">
         <img
-          className="ml-4 mt-8 border-4 border-primary rounded-full h-36"
+          className="mt-8 border-4 border-primary rounded-full h-36"
           alt={data.devName}
           src={data.profilePhoto}
         />
-        <p className="ml-4 mt-6 text-2xl text-primary">{data.fullName}</p>
+        <p className="mt-6 text-2xl text-primary">{data.fullName}</p>
         <p className="text-pretty text-center text-onSurface mt-4 max-md:text-sm">
           {data.headerDescription}
         </p>

@@ -23,12 +23,20 @@ export const data = {
   aboutMeDescription:
     "Soy un desarrollador apasionado por crear aplicaciones y sitios web modernos, intuitivos y funcionales. Mi objetivo es combinar diseño atractivo con tecnología para brindar experiencias excepcionales a los usuarios.",
   myStack: [
-    { name: "Android Jetpack Compose", icon: composeIcon, moreInfo: "https://developer.android.com/compose" },
+    {
+      name: "Android Jetpack Compose",
+      icon: composeIcon,
+      moreInfo: "https://developer.android.com/compose",
+    },
     { name: "Kotlin", icon: icKotlin, moreInfo: "https://kotlinlang.org/" },
     { name: "Ktor", icon: icKtor, moreInfo: "https://ktor.io/" },
     { name: "React", icon: reactIcon, moreInfo: "https://react.dev/" },
     { name: "AstroJS", icon: icAstro, moreInfo: "https://astro.build/" },
-    { name: "TailwindCSS", icon: tailwindIcon, moreInfo: "https://tailwindcss.com/" },
+    {
+      name: "TailwindCSS",
+      icon: tailwindIcon,
+      moreInfo: "https://tailwindcss.com/",
+    },
     { name: "TS", icon: icTs, moreInfo: "https://www.typescriptlang.org/" },
     { name: "Python", icon: icPython, moreInfo: "https://www.python.org/" },
   ],
@@ -41,11 +49,11 @@ export const data = {
       link: "https://github.com/juanmadev5/CodeCollection",
     },
     {
-      name: "Simple WordToPDF",
+      name: "Simple WordToPDF (From CodeCollection)",
       description:
         "Script de Python que convierte archivos Word a PDF en segundos.",
       icon: icPython,
-      link: "https://github.com/juanmadev5/CodeCollection/blob/main/Python/3%20-%20wordToPdf.py",
+      link: "https://github.com/juanmadev5/CodeCollection/blob/main/Python/WordToPDF.py",
     },
     {
       name: "Imagify",

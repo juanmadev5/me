@@ -20,7 +20,7 @@ metaDesc?.setAttribute("content", strings.title);
 
 createRoot(document.getElementById("root")!).render(<App />);
 
-function App() {
+export function App() {
   const [showContent, setShowContent] = useState(false);
 
   useEffect(() => {

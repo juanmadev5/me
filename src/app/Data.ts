@@ -5,7 +5,6 @@ import icAndroid from "/ic-android.webp";
 import icAstro from "/ic-astro.webp";
 import icPython from "/ic-python.webp";
 import icCode from "/ic-code.webp";
-import icTs from "/ic-ts.webp";
 import icKotlin from "/ic-kotlin.webp";
 import githubIcon from "/ic-github.webp";
 import linkedinIcon from "/ic-linkedin.webp";
@@ -35,7 +34,6 @@ export const data = {
       icon: tailwindIcon,
       moreInfo: "https://tailwindcss.com/",
     },
-    { name: "TS", icon: icTs, moreInfo: "https://www.typescriptlang.org/" },
     { name: "Python", icon: icPython, moreInfo: "https://www.python.org/" },
   ],
   myProyects: [

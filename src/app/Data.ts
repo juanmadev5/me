@@ -7,7 +7,6 @@ import icPython from "/ic-python.webp";
 import icCode from "/ic-code.webp";
 import icTs from "/ic-ts.webp";
 import icKotlin from "/ic-kotlin.webp";
-import icKtor from "/ic-ktor.webp";
 import githubIcon from "/ic-github.webp";
 import linkedinIcon from "/ic-linkedin.webp";
 import contactMe from "/ic-contactme.webp";
@@ -29,7 +28,6 @@ export const data = {
       moreInfo: "https://developer.android.com/compose",
     },
     { name: "Kotlin", icon: icKotlin, moreInfo: "https://kotlinlang.org/" },
-    { name: "Ktor", icon: icKtor, moreInfo: "https://ktor.io/" },
     { name: "React", icon: reactIcon, moreInfo: "https://react.dev/" },
     { name: "AstroJS", icon: icAstro, moreInfo: "https://astro.build/" },
     {

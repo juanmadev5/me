@@ -54,9 +54,16 @@ export const data = {
     {
       name: "Imagify",
       description:
-        "Aplicación Android avanzada para búsqueda y descarga de imágenes desde unsplash.com, desarrollado con Kotlin y Jetpack Compose.",
+        "Aplicación Android avanzada para búsqueda y descarga de imágenes desde unsplash.com, desarrollado Jetpack Compose.",
       icon: icAndroid,
       link: "https://github.com/juanmadev5/Imagify",
+    },
+    {
+      name: "TicTacToe",
+      description:
+        "Mini juego de TicTacToe desarrollado con Jetpack Compose",
+      icon: icAndroid,
+      link: "https://github.com/juanmadev5/TicTacToe",
     },
     {
       name: "Este portafolio",

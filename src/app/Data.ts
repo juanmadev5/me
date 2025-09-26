@@ -4,7 +4,6 @@ import tailwindIcon from "/ic-tailwindcss.webp";
 import icAndroid from "/ic-android.webp";
 import icDotnet from "/ic-dotnet.webp";
 import icAstro from "/ic-astro.webp";
-import icPython from "/ic-python.webp";
 import icKotlin from "/ic-kotlin.webp";
 import githubIcon from "/ic-github.webp";
 import linkedinIcon from "/ic-linkedin.webp";
@@ -32,7 +31,6 @@ export const data = {
       icon: tailwindIcon
     },
     { name: "Microsoft .NET", icon: icDotnet },
-    { name: "Python", icon: icPython },
   ],
   myProyects: [
     {

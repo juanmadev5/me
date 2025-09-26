@@ -2,7 +2,7 @@ import composeIcon from "/ic-compose.webp";
 import reactIcon from "/ic-react.webp";
 import tailwindIcon from "/ic-tailwindcss.webp";
 import icAndroid from "/ic-android.webp";
-import icDotnet from "/ic-dotnet.webp";
+import icCsharp from "/ic-csharp.webp";
 import icAstro from "/ic-astro.webp";
 import githubIcon from "/ic-github.webp";
 import linkedinIcon from "/ic-linkedin.webp";
@@ -28,27 +28,27 @@ export const data = {
       name: "TailwindCSS",
       icon: tailwindIcon
     },
-    { name: "Microsoft .NET", icon: icDotnet },
+    { name: "C#", icon: icCsharp },
   ],
   myProyects: [
     {
-      name: ".NET Console Inventory System",
+      name: "Control de Inventarios en Consola con C#",
       description:
-        "Sistema de control de inventario desarrollado con C# para la plataforma .NET",
-      icon: icDotnet,
+        "Este proyecto utiliza JSON para guardar y cargar datos, e implementa el patrón Singleton para la gestión centralizada de la información. El uso de ConcurrentDictionary asegura un manejo de datos seguro y eficiente.",
+      icon: icCsharp,
       link: "https://github.com/juanmadev5/InventorySystem",
     },
     {
-      name: "Imagify",
+      name: "Imagify: Aplicación de búsqueda y descarga de imágenes",
       description:
-        "Aplicación Android avanzada para búsqueda y descarga de imágenes desde unsplash.com, desarrollado con Jetpack Compose.",
+        "Desarrollada de forma nativa para Android utilizando Jetpack Compose para la interfaz de usuario. Conectada a la API de Unsplash, esta app permite a los usuarios buscar y descargar imágenes de alta calidad de forma eficiente, demostrando experiencia en el consumo de APIs y desarrollo moderno de UI en Android.",
       icon: icAndroid,
       link: "https://github.com/juanmadev5/Imagify",
     },
     {
-      name: "LearnWithMe",
+      name: "LearnWithMe: Blog personal",
       description:
-        "Blog desarrollado con AstroJS, demostrando mis habilidades en el desarrollo de aplicaciones modernas y optimizadas con una arquitectura sin servidor.",
+        "Un blog personal desarrollado con AstroJS para demostrar habilidades en la creación de sitios web modernos. Su arquitectura sin servidor garantiza un rendimiento y una optimización excepcionales, destacando mi experiencia en el desarrollo de aplicaciones web de alto rendimiento.",
       icon: icAstro,
       link: "https://github.com/juanmadev5/learn-with-me",
     },

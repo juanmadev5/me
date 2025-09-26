@@ -1,8 +1,9 @@
 {
-  "name": "me",
+  "name": "me-portfolio",
   "private": true,
-  "version": "0.0.0",
+  "version": "2.0.0",
   "type": "module",
+  "description": "my own personal portfolio",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",

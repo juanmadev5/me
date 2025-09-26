@@ -4,7 +4,6 @@ import tailwindIcon from "/ic-tailwindcss.webp";
 import icAndroid from "/ic-android.webp";
 import icDotnet from "/ic-dotnet.webp";
 import icAstro from "/ic-astro.webp";
-import icKotlin from "/ic-kotlin.webp";
 import githubIcon from "/ic-github.webp";
 import linkedinIcon from "/ic-linkedin.webp";
 import contactMe from "/ic-contactme.webp";
@@ -24,7 +23,6 @@ export const data = {
       name: "Android Jetpack Compose",
       icon: composeIcon
     },
-    { name: "Kotlin", icon: icKotlin },
     { name: "React", icon: reactIcon },
     {
       name: "TailwindCSS",

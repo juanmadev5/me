@@ -45,7 +45,7 @@ export default function Projects() {
             <div
               className={`transition-[max-height] duration-500 ease-in-out overflow-hidden`}
               style={{
-                maxHeight: isExpanded ? "200px" : "0",
+                maxHeight: isExpanded ? "1000px" : "0",
               }}
             >
               <div className="m-2 mt-4">

@@ -29,16 +29,16 @@ export default function Projects() {
                 src={project.icon}
                 alt={`${project.name} icon`}
               />
-              <h3 className="text-sm ml-2 text-onSurface">{project.name}</h3>
+              <h3 className="text-sm ml-2 mr-2 text-onSurface">{project.name}</h3>
               <button
                 onClick={() => toggleExpand(index)}
                 aria-label={strings.descriptionButton}
-                className="ml-auto bg-onSecondary text-xs px-2 py-2 rounded-xl"
+                className="ml-auto bg-onSecondary rounded-xl w-8 h-8 flex items-center justify-center flex-none"
               >
                 {isExpanded ? (
-                  <img className="w-4 h-4 invert" src={icArrowUp}></img>
+                  <img className="w-4 h-4 invert" src={icArrowUp} />
                 ) : (
-                  <img className="w-4 h-4 invert" src={icArrowDown}></img>
+                  <img className="w-4 h-4 invert" src={icArrowDown} />
                 )}
               </button>
             </div>

@@ -19,14 +19,14 @@ export const data = {
   aboutMeDescription:
     "Soy un desarrollador apasionado por crear aplicaciones y sitios web modernos, intuitivos y funcionales. Mi objetivo es combinar diseño atractivo con tecnología para brindar experiencias excepcionales a los usuarios.",
   myStack: [
-    {
-      name: "Android Jetpack Compose",
-      icon: composeIcon
-    },
     { name: "React", icon: reactIcon },
     {
       name: "TailwindCSS",
       icon: tailwindIcon
+    },
+    {
+      name: "Android Jetpack Compose",
+      icon: composeIcon
     },
     { name: "C#", icon: icCsharp },
   ],

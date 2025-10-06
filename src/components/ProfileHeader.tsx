@@ -1,20 +1,39 @@
 import locationIcon from "/ic-location.svg";
 import Social from "./Social";
-import { data } from "../app/Data";
 import { strings } from "../app/Strings";
+import { PortfolioDataModel } from "../model/PortfolioDataModel";
 
-export default function ProfileHeader() {
+type ProfileHeaderProps = Pick<
+  PortfolioDataModel,
+  | "devName"
+  | "fullName"
+  | "headerDescription"
+  | "profilePhoto"
+  | "location"
+  | "socialLinks"
+  | "cvLink"
+>;
+
+export default function ProfileHeader({
+  devName,
+  fullName,
+  headerDescription,
+  profilePhoto,
+  location,
+  socialLinks,
+  cvLink,
+}: ProfileHeaderProps) {
   return (
     <div className="tracking-wide flex flex-col h-auto py-2">
       <div className="w-full h-auto flex flex-col py-2 items-center gap-2">
         <img
           className="mt-8 border-4 border-primary rounded-full h-36"
-          alt={data.devName}
-          src={data.profilePhoto}
+          alt={devName}
+          src={profilePhoto}
         />
-        <p className="mt-6 text-2xl text-primary">{data.fullName}</p>
+        <p className="mt-6 text-2xl text-primary">{fullName}</p>
         <p className="text-pretty text-center text-onSurface mt-4 max-md:text-sm">
-          {data.headerDescription}
+          {headerDescription}
         </p>
         <div className="mt-4 flex flex-row max-md:text-sm items-center">
           <img
@@ -23,10 +42,10 @@ export default function ProfileHeader() {
             alt={strings.iconLocationAlt}
           />
           <p className="ml-2 text-onSurface" translate="no">
-            {data.location}
+            {location}
           </p>
         </div>
-        <Social />
+        <Social socialLinks={socialLinks} cvLink={cvLink} />
       </div>
     </div>
   );

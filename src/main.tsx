@@ -13,41 +13,68 @@ import TitleComponent from "./components/TitleComponent";
 import { strings } from "./app/Strings";
 import HorizontalDivider from "./components/HorizontalDivider";
 import { useState, useEffect } from "react";
-
-document.title = strings.title;
-const metaDesc = document.querySelector('meta[name="description"]');
-metaDesc?.setAttribute("content", strings.title);
+import { getPortfolioData } from "./app/Data";
+import { PortfolioDataModel } from "./model/PortfolioDataModel";
 
 createRoot(document.getElementById("root")!).render(<App />);
 
 export function App() {
+  const [data, setData] = useState<PortfolioDataModel | null>(null);
   const [showContent, setShowContent] = useState(false);
 
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setShowContent(true);
-    }, 1000);
+  document.title = data ? data.devName : "Portafolio";
+  const metaDesc = document.querySelector('meta[name="description"]');
+  metaDesc?.setAttribute("content", data ? data.devName : "Portafolio");
 
-    return () => clearTimeout(timer);
+  useEffect(() => {
+    (async () => {
+      try {
+        const fetchedData: PortfolioDataModel = await getPortfolioData();
+        setData(fetchedData);
+      } catch (err) {
+        console.error("Error cargando datos:", err);
+      }
+    })();
   }, []);
+
+  useEffect(() => {
+    if (data) {
+      const timer = setTimeout(() => setShowContent(true), 100);
+      return () => clearTimeout(timer);
+    }
+  }, [data]);
+
+  if (!data) {
+    return (
+      <main className="flex h-screen items-center justify-center bg-background text-red-400 font-comfortaa"></main>
+    );
+  }
 
   return (
     <main className="bg-background flex flex-col items-center justify-center antialiased tracking-wide font-comfortaa text-white">
       <div
-        className={`w-[700px] max-md:w-full p-2 max-md:p-0 transition-opacity duration-500 ${
+        className={`w-[700px] max-md:w-full p-2 max-md:p-0 transition-opacity duration-1000 ease-in-out ${
           showContent ? "opacity-100" : "opacity-0"
         }`}
       >
-        <ProfileHeader />
+        <ProfileHeader
+          devName={data.devName}
+          fullName={data.fullName}
+          headerDescription={data.headerDescription}
+          profilePhoto={data.profilePhoto}
+          location={data.location}
+          socialLinks={data.socialLinks}
+          cvLink={data.cvLink}
+        />
         <HorizontalDivider />
         <TitleComponent icon={icInfo} title={strings.aboutMeDesc} />
-        <AboutMe />
+        <AboutMe aboutMeDescription={data.aboutMeDescription} />
         <HorizontalDivider />
         <TitleComponent icon={icTech} title={strings.technologiesDesc} />
-        <Stack />
+        <Stack myStack={data.myStack} />
         <HorizontalDivider />
         <TitleComponent icon={icProyects} title={strings.proyectsDesc} />
-        <Projects />
+        <Projects myProjects={data.myProjects} />
         <HorizontalDivider />
         <TitleComponent icon={icEmail} title={strings.contactMeDesc} />
         <Contact />

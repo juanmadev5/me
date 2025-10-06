@@ -1,9 +1,7 @@
-import { data } from "../app/Data";
+import { PortfolioDataModel } from "../model/PortfolioDataModel";
 
-export default function AboutMe() {
-  return (
-    <p className="p-4 text-center text-onSurface">
-      {data.aboutMeDescription}
-    </p>
-  );
+type AboutMeProps = Pick<PortfolioDataModel, "aboutMeDescription">;
+
+export default function AboutMe({ aboutMeDescription }: AboutMeProps) {
+  return <p className="p-4 text-center text-onSurface">{aboutMeDescription}</p>;
 }

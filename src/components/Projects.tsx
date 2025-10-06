@@ -1,10 +1,12 @@
 import { useState } from "react";
-import { data } from "../app/Data";
 import icArrowUp from "/ic-arrow-up.svg";
 import icArrowDown from "/ic-arrow-down.svg";
 import { strings } from "../app/Strings";
+import { PortfolioDataModel } from "../model/PortfolioDataModel";
 
-export default function Projects() {
+type ProjectsProps = Pick<PortfolioDataModel, "myProjects">;
+
+export default function Projects({ myProjects: myProjects }: ProjectsProps) {
   const [expanded, setExpanded] = useState(null);
 
   //@ts-ignore
@@ -14,7 +16,7 @@ export default function Projects() {
 
   return (
     <div className="flex flex-col mt-6 p-2 gap-4 rounded-2xl mx-2">
-      {data.myProyects.map((project, index) => {
+      {myProjects.map((project, index) => {
         const isExpanded = expanded === index;
         return (
           <div
@@ -26,10 +28,12 @@ export default function Projects() {
                 className="m-2 mt-1"
                 width="24px"
                 height="24px"
-                src={project.icon}
+                src={project.icon_url}
                 alt={`${project.name} icon`}
               />
-              <h3 className="text-sm ml-2 mr-2 text-onSurface">{project.name}</h3>
+              <h3 className="text-sm ml-2 mr-2 text-onSurface">
+                {project.name}
+              </h3>
               <button
                 onClick={() => toggleExpand(index)}
                 aria-label={strings.descriptionButton}

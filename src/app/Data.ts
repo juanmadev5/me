@@ -22,6 +22,6 @@ export async function getPortfolioData(): Promise<PortfolioDataModel> {
     myStack: stackData || [],
     myProjects: projectsData || [],
     socialLinks: socialsData || [],
-    cvLink: profileData.cv_link,
+    cvlink: profileData.cv_link,
   };
 }

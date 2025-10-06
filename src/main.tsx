@@ -64,7 +64,6 @@ export function App() {
           profilePhoto={data.profilePhoto}
           location={data.location}
           socialLinks={data.socialLinks}
-          cvLink={data.cvLink}
         />
         <HorizontalDivider />
         <TitleComponent icon={icInfo} title={strings.aboutMeDesc} />

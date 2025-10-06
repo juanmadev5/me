@@ -1,8 +1,8 @@
 import { PortfolioDataModel } from "../model/PortfolioDataModel";
 
-type SocialProps = Pick<PortfolioDataModel, "socialLinks" | "cvLink">;
+type SocialProps = Pick<PortfolioDataModel, "socialLinks">;
 
-export default function Social({ socialLinks, cvLink }: SocialProps) {
+export default function Social({ socialLinks }: SocialProps) {
   return (
     <>
       <div className="h-12 mt-2 mx-3 flex flex-row items-center gap-1">
@@ -21,9 +21,6 @@ export default function Social({ socialLinks, cvLink }: SocialProps) {
           </a>
         ))}
       </div>
-      <a href={cvLink} className="text-primary">
-        Mi CV
-      </a>
     </>
   );
 }

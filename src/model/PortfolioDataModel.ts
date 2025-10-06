@@ -12,5 +12,5 @@ export interface PortfolioDataModel {
   myStack: StackModel[];
   myProjects: ProjectModel[];
   socialLinks: SocialLinksModel[];
-  cvLink: string;
+  cvlink: string;
 }

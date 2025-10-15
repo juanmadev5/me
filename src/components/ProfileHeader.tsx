@@ -11,6 +11,7 @@ type ProfileHeaderProps = Pick<
   | "profilePhoto"
   | "location"
   | "socialLinks"
+  | "cvlink"
 >;
 
 export default function ProfileHeader({
@@ -20,6 +21,7 @@ export default function ProfileHeader({
   profilePhoto,
   location,
   socialLinks,
+  cvlink
 }: ProfileHeaderProps) {
   return (
     <div className="tracking-wide flex flex-col h-auto py-2">
@@ -43,7 +45,7 @@ export default function ProfileHeader({
             {location}
           </p>
         </div>
-        <Social socialLinks={socialLinks} />
+        <Social socialLinks={socialLinks} cvlink={cvlink} />
       </div>
     </div>
   );

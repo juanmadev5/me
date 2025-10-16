@@ -10,6 +10,7 @@ export async function getPortfolioData(): Promise<PortfolioDataModel> {
       icon_url: "https://skillicons.dev/icons?i=kotlin",
     },
     { name: "HTML", icon_url: "https://skillicons.dev/icons?i=html" },
+    { name: "React", icon_url: "https://skillicons.dev/icons?i=react" },
     {
       name: "TailwindCSS",
       icon_url: "https://skillicons.dev/icons?i=tailwind",

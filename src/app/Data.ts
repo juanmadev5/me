@@ -22,6 +22,13 @@ export async function getPortfolioData(): Promise<PortfolioDataModel> {
 
   const myProjects: ProjectModel[] = [
     {
+      icon_url: "https://skillicons.dev/icons?i=react",
+      name: "Fastsites.jm: Creo tu sitio web de alta calidad a bajo costo",
+      description:
+        "Servicio de desarrollo web profesional especializado en la creación de sitios de alto rendimiento y visualmente atractivos. Garantiza una experiencia de usuario fluida, tiempos de carga ultrarrápidos y una solución eficiente a un costo accesible.",
+      link: "https://github.com/juanmadev5/fastsites",
+    },
+    {
       icon_url: "https://skillicons.dev/icons?i=kotlin",
       name: "Imagify: Aplicación de búsqueda y descarga de imágenes",
       description:
@@ -75,13 +82,14 @@ export async function getPortfolioData(): Promise<PortfolioDataModel> {
   > = {
     devName: "JM Dev",
     fullName: "Juan Manuel Velázquez",
-    headerDescription:
-      "Desarrollador Android",
-    profilePhoto: "https://avatars.githubusercontent.com/u/115042535?s=400&u=62a596cea79ad50f38ed1e841b021acae7b7b79a&v=4",
+    headerDescription: "Desarrollador Android / Web Frontend",
+    profilePhoto:
+      "https://avatars.githubusercontent.com/u/115042535?s=400&u=62a596cea79ad50f38ed1e841b021acae7b7b79a&v=4",
     location: "Ciudad de Limpio, Paraguay",
     aboutMeDescription:
       "Soy un desarrollador apasionado por crear aplicaciones móviles, intuitivos y funcionales. Mi objetivo es combinar diseño atractivo con tecnología para brindar experiencias excepcionales a los usuarios.",
-    cvlink: "https://drive.google.com/file/d/10u5nQp08dynd3C_7DuViF8Vq-jBoK-Cv/view?usp=drive_link",
+    cvlink:
+      "https://drive.google.com/file/d/10u5nQp08dynd3C_7DuViF8Vq-jBoK-Cv/view?usp=drive_link",
   };
 
   return {

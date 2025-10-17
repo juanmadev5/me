@@ -23,13 +23,6 @@ export async function getPortfolioData(): Promise<PortfolioDataModel> {
 
   const myProjects: ProjectModel[] = [
     {
-      icon_url: "https://skillicons.dev/icons?i=react",
-      name: "Fastsites.jm: Creo tu sitio web de alta calidad a bajo costo",
-      description:
-        "Servicio de desarrollo web profesional especializado en la creación de sitios de alto rendimiento y visualmente atractivos. Garantiza una experiencia de usuario fluida, tiempos de carga ultrarrápidos y una solución eficiente a un costo accesible.",
-      link: "https://github.com/juanmadev5/fastsites",
-    },
-    {
       icon_url: "https://skillicons.dev/icons?i=kotlin",
       name: "Imagify: Aplicación de búsqueda y descarga de imágenes",
       description:

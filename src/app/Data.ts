@@ -4,12 +4,9 @@ import { SocialLinksModel } from "../model/SocialLinksModel";
 import Sc1Imagify from "/screenshot1-imagify.webp";
 import Sc2Imagify from "/screenshot2-imagify.webp";
 import Sc3Imagify from "/screenshot3-imagify.webp";
-import ScInvSys from "/screenshot2-inventorysystem.webp";
+import ScInvSys from "/screenshot-inventorysystem.webp";
 import Sc1ecommerce from "/screenshot1-ecommerce.webp";
 import Sc2ecommerce from "/screenshot2-ecommerce.webp";
-import Sc1flashcards from "/screenshot1-flashcards.webp";
-import Sc2flashcards from "/screenshot2-flashcards.webp";
-import Sc3flashcards from "/screenshot3-flashcards.webp";
 import ScServicesfrom from"/screenshot-services.webp";
 
 export async function getPortfolioData(): Promise<PortfolioDataModel> {
@@ -65,17 +62,6 @@ export async function getPortfolioData(): Promise<PortfolioDataModel> {
         "https://skillicons.dev/icons?i=tailwind",
       ],
       screenshots:[Sc1ecommerce, Sc2ecommerce]
-    },
-    {
-      name: "Flashcards: Tu Ayudante de Estudio Personal",
-      description:
-        "¡Una sencilla pero poderosa aplicación de tarjetas de memoria (flashcards) para Android, diseñada para ayudarte a estudiar y memorizar cualquier cosa que necesites! Creada desde cero utilizando las tecnologías más modernas del ecosistema de Android, guarda los datos localmente en un archivo JSON",
-      link: "https://github.com/juanmadev5/flashcards",
-      techList: [
-        "https://skillicons.dev/icons?i=androidstudio",
-        "https://skillicons.dev/icons?i=kotlin",
-      ],
-      screenshots:[Sc1flashcards, Sc2flashcards, Sc3flashcards]
     },
   ];
 

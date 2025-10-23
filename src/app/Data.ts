@@ -4,7 +4,7 @@ import { SocialLinksModel } from "../model/SocialLinksModel";
 import Sc1Imagify from "/screenshot1-imagify.webp";
 import Sc2Imagify from "/screenshot2-imagify.webp";
 import Sc3Imagify from "/screenshot3-imagify.webp";
-import Sc1InvSys from "/screenshot2-inventorysystem.webp";
+import ScInvSys from "/screenshot2-inventorysystem.webp";
 import Sc1ecommerce from "/screenshot1-ecommerce.webp";
 import Sc2ecommerce from "/screenshot2-ecommerce.webp";
 import Sc1flashcards from "/screenshot1-flashcards.webp";
@@ -38,7 +38,7 @@ export async function getPortfolioData(): Promise<PortfolioDataModel> {
         "https://skillicons.dev/icons?i=cs",
         "https://skillicons.dev/icons?i=azure",
       ],
-      screenshots:[Sc1InvSys]
+      screenshots:[ScInvSys]
     },
     {
       name: "Imagify: Aplicación de búsqueda y descarga de imágenes",

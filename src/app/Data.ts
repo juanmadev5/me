@@ -21,6 +21,7 @@ export async function getPortfolioData(): Promise<PortfolioDataModel> {
         "Landing page para mi servicio de desarrollo de sitios web, construido con React y TailwindCSS para una experiencia rápida y responsiva.",
       link: "https://github.com/juanmadev5/fastsites",
       techList: [
+        "https://skillicons.dev/icons?i=visualstudio",
         "https://skillicons.dev/icons?i=react",
         "https://skillicons.dev/icons?i=html",
         "https://skillicons.dev/icons?i=tailwindcss",

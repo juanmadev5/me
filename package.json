@@ -4,6 +4,7 @@
   "version": "2.0.0",
   "type": "module",
   "description": "my own personal portfolio",
+  "homepage": "https://juanmadev5.github.io/me/",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",

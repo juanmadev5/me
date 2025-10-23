@@ -21,7 +21,6 @@ export async function getPortfolioData(): Promise<PortfolioDataModel> {
         "Landing page para mi servicio de desarrollo de sitios web, construido con React y TailwindCSS para una experiencia rápida y responsiva.",
       link: "https://github.com/juanmadev5/fastsites",
       techList: [
-        "https://skillicons.dev/icons?i=visualstudio",
         "https://skillicons.dev/icons?i=react",
         "https://skillicons.dev/icons?i=html",
         "https://skillicons.dev/icons?i=tailwindcss",
@@ -34,6 +33,7 @@ export async function getPortfolioData(): Promise<PortfolioDataModel> {
         "Contiene dos modelos: API RESTful para gestión de inventarios, con operaciones CRUD y persistencia de datos con AzureDB.",
       link: "https://github.com/juanmadev5/InventorySystem",
       techList: [
+        "https://skillicons.dev/icons?i=visualstudio",
         "https://skillicons.dev/icons?i=dotnet",
         "https://skillicons.dev/icons?i=cs",
         "https://skillicons.dev/icons?i=azure",

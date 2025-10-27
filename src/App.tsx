@@ -7,7 +7,6 @@ import ProfileHeader from "./components/ProfileHeader";
 import Projects from "./components/Projects";
 import TitleComponent from "./components/TitleComponent";
 import { strings } from "./app/Strings";
-import HorizontalDivider from "./components/HorizontalDivider";
 import { useState, useEffect } from "react";
 import { getPortfolioData } from "./app/Data";
 import { PortfolioDataModel } from "./model/PortfolioDataModel";
@@ -33,21 +32,15 @@ export function App() {
 
   useEffect(() => {
     if (data) {
-      const timer = setTimeout(() => setShowContent(true), 100);
+      const timer = setTimeout(() => setShowContent(true), 400);
       return () => clearTimeout(timer);
     }
   }, [data]);
 
-  if (!data) {
+  if (data) {
     return (
-      <main className="flex h-screen items-center justify-center bg-background text-red-400 font-comfortaa"></main>
-    );
-  }
-
-  return (
-    <main className="bg-background flex flex-col items-center justify-center antialiased tracking-wide font-comfortaa text-white">
-      <div
-        className={`w-[700px] max-md:w-full p-2 max-md:p-0 transition-opacity duration-1000 ease-in-out ${
+      <main
+        className={`bg-background flex flex-col gap-10 p-2 items-center justify-center antialiased font-comfortaa transition-opacity duration-1000 ease-in-out md:max-w-[540px] lg:max-w-[640px] mx-auto ${
           showContent ? "opacity-100" : "opacity-0"
         }`}
       >
@@ -60,16 +53,22 @@ export function App() {
           socialLinks={data.socialLinks}
           cvlink={data.cvlink}
         />
-        <HorizontalDivider />
-        <TitleComponent icon={icInfo} title={strings.aboutMeDesc} />
-        <AboutMe aboutMeDescription={data.aboutMeDescription} />
-        <HorizontalDivider />
-        <TitleComponent icon={icProyects} title={strings.proyectsDesc} />
-        <Projects myProjects={data.myProjects} />
-        <HorizontalDivider />
-        <TitleComponent icon={icEmail} title={strings.contactMeDesc} />
-        <Contact />
-      </div>
-    </main>
-  );
+
+        <section className="flex flex-col gap-4">
+          <TitleComponent icon={icInfo} title={strings.aboutMeDesc} />
+          <AboutMe aboutMeDescription={data.aboutMeDescription} />
+        </section>
+
+        <section className="flex flex-col gap-4">
+          <TitleComponent icon={icProyects} title={strings.proyectsDesc} />
+          <Projects myProjects={data.myProjects} />
+        </section>
+
+        <section className="flex flex-col gap-4">
+          <TitleComponent icon={icEmail} title={strings.contactMeDesc} />
+          <Contact />
+        </section>
+      </main>
+    );
+  }
 }

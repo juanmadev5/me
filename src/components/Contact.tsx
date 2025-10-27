@@ -26,7 +26,7 @@ export default function Contact() {
   }
 
   return (
-    <form id="form" className="p-8 sm:mx-0 max-md:mx-2 xl:mx-32" onSubmit={sendEmail}>
+    <form id="form" className="sm:mx-0 max-md:mx-2 xl:mx-32" onSubmit={sendEmail}>
         <div className="mb-4">
           <label className="block text-sm mb-2 text-onSurface" htmlFor="name">
             {strings.formName}

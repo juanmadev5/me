@@ -24,29 +24,28 @@ export default function ProfileHeader({
   cvlink,
 }: ProfileHeaderProps) {
   return (
-    <div className="tracking-wide flex flex-col h-auto py-2">
-      <div className="w-full h-auto flex flex-col py-2 items-center gap-2">
+    <article className="flex flex-col items-center text-center gap-2">
+      <img
+        className="mt-8 border-4 border-primary rounded-full h-32"
+        alt={devName}
+        src={profilePhoto}
+      />
+      <p className="mt-6 text-2xl text-primary text-center">{fullName}</p>
+      <p className="text-center text-onSurface opacity-90 mt-4">
+        {headerDescription}
+      </p>
+      <footer className="mt-2 flex text-xs text-onSurface opacity-80 justify-center items-center flex-col">
         <img
-          className="mt-8 border-4 border-primary rounded-full h-36"
-          alt={devName}
-          src={profilePhoto}
+          width="20px"
+          height="20px"
+          src={locationIcon}
+          alt={strings.iconLocationAlt}
         />
-        <p className="mt-6 text-2xl text-primary text-center">{fullName}</p>
-        <p className="text-pretty text-center text-onSurface opacity-90 mt-4 max-md:text-sm">
-          {headerDescription}
+        <p className="text-center mt-2" translate="no">
+          {location}
         </p>
-        <div className="mt-4 flex flex-row text-xs text-onSurface opacity-80">
-          <img
-            className="w-4 h-4 fill-primary"
-            src={locationIcon}
-            alt={strings.iconLocationAlt}
-          />
-          <p className="ml-2" translate="no">
-            {location}
-          </p>
-        </div>
-        <Social socialLinks={socialLinks} cvlink={cvlink} />
-      </div>
-    </div>
+      </footer>
+      <Social socialLinks={socialLinks} cvlink={cvlink} />
+    </article>
   );
 }

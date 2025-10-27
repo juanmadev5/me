@@ -32,7 +32,6 @@ export async function getPortfolioData(): Promise<PortfolioDataModel> {
       techList: [
         "https://skillicons.dev/icons?i=dotnet",
         "https://skillicons.dev/icons?i=cs",
-        "https://skillicons.dev/icons?i=rider"
       ],
       screenshots:[ScInvSys]
     },

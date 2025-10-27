@@ -7,10 +7,9 @@ import Sc3Imagify from "/screenshot3-imagify.webp";
 import ScInvSys from "/screenshot-inventorysystem.webp";
 import Sc1ecommerce from "/screenshot1-ecommerce.webp";
 import Sc2ecommerce from "/screenshot2-ecommerce.webp";
-import ScServicesfrom from"/screenshot-services.webp";
+import ScServicesfrom from "/screenshot-services.webp";
 
 export async function getPortfolioData(): Promise<PortfolioDataModel> {
-
   const myProjects: ProjectModel[] = [
     {
       name: "Fastsites.jm: Mi servicio de desarrollo de sitios web",
@@ -22,7 +21,7 @@ export async function getPortfolioData(): Promise<PortfolioDataModel> {
         "https://skillicons.dev/icons?i=html",
         "https://skillicons.dev/icons?i=tailwindcss",
       ],
-      screenshots:[ScServicesfrom]
+      screenshots: [ScServicesfrom],
     },
     {
       name: "Sistema de Control de Inventario",
@@ -33,7 +32,7 @@ export async function getPortfolioData(): Promise<PortfolioDataModel> {
         "https://skillicons.dev/icons?i=dotnet",
         "https://skillicons.dev/icons?i=cs",
       ],
-      screenshots:[ScInvSys]
+      screenshots: [ScInvSys],
     },
     {
       name: "Imagify: Aplicación de búsqueda y descarga de imágenes",
@@ -45,7 +44,7 @@ export async function getPortfolioData(): Promise<PortfolioDataModel> {
         "https://skillicons.dev/icons?i=kotlin",
         "https://skillicons.dev/icons?i=firebase",
       ],
-      screenshots:[Sc1Imagify, Sc2Imagify, Sc3Imagify]
+      screenshots: [Sc1Imagify, Sc2Imagify, Sc3Imagify],
     },
     {
       name: "E-commerce Backend & Admin Panel con Supabase",
@@ -59,25 +58,20 @@ export async function getPortfolioData(): Promise<PortfolioDataModel> {
         "https://skillicons.dev/icons?i=html",
         "https://skillicons.dev/icons?i=tailwind",
       ],
-      screenshots:[Sc1ecommerce, Sc2ecommerce]
+      screenshots: [Sc1ecommerce, Sc2ecommerce],
     },
   ];
 
   const socialLinks: SocialLinksModel[] = [
-    {
-      name: "LinkedIn",
-      link: "https://www.linkedin.com/in/jmdev365/",
-      icon_url: "https://skillicons.dev/icons?i=linkedin",
-    },
     {
       name: "GitHub",
       link: "https://github.com/juanmadev5",
       icon_url: "https://skillicons.dev/icons?i=github",
     },
     {
-      name: "Email",
-      link: "#form",
-      icon_url: "https://skillicons.dev/icons?i=gmail",
+      name: "LinkedIn",
+      link: "https://www.linkedin.com/in/jmdev365/",
+      icon_url: "https://skillicons.dev/icons?i=linkedin",
     },
   ];
 

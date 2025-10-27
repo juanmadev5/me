@@ -1,12 +1,8 @@
 export const strings = {
-  landingTitle: "Servicios",
   aboutMeDesc: "Sobre mí",
-  technologiesDesc: "Mi stack",
   proyectsDesc: "Proyectos destacados",
   contactMeDesc: "Contáctame",
   iconLocationAlt: "Icono de ubicación",
-  gotoRepo: "Ir al repositorio del proyecto",
-  seeOnGH: "Ver en GitHub",
   alertSended:
     "¡Mensaje enviado exitosamente. Te responderé lo más rápido posible!",
   alertError: "Hubo un problema al enviar el mensaje. Intenta nuevamente.",
@@ -17,5 +13,4 @@ export const strings = {
   formMSJ: "Mensaje",
   formMSJPH: "Tu mensaje",
   sendBtn: "Enviar",
-  descriptionButton: "Expandir o contraer descripción del proyecto",
 };

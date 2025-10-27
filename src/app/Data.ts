@@ -30,10 +30,9 @@ export async function getPortfolioData(): Promise<PortfolioDataModel> {
         "API RESTful para gestión de inventarios, con operaciones CRUD y persistencia de datos con In-Memory Database en desarrollo con posibilidad de configuración a MySQL Server en entorno de producción. Uso de JWT para autenticación segura y autorización de usuarios.",
       link: "https://github.com/juanmadev5/InventorySystem-webapi",
       techList: [
-        "https://skillicons.dev/icons?i=visualstudio",
         "https://skillicons.dev/icons?i=dotnet",
         "https://skillicons.dev/icons?i=cs",
-        "https://skillicons.dev/icons?i=azure",
+        "https://skillicons.dev/icons?i=rider"
       ],
       screenshots:[ScInvSys]
     },

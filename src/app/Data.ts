@@ -8,9 +8,9 @@ import ScInvSys from "/screenshot-inventorysystem.webp";
 import Sc1ecommerce from "/screenshot1-ecommerce.webp";
 import Sc2ecommerce from "/screenshot2-ecommerce.webp";
 import ScServicesfrom from "/screenshot-services.webp";
-import Sctjm1 from "/screenshot1-tjm.jpg";
-import Sctjm2 from "/screenshot2-tjm.jpg";
-import Sctjm3 from "/screenshot3-tjm.jpg";
+import Sctjm1 from "/screenshot1-tjm.webp";
+import Sctjm2 from "/screenshot2-tjm.webp";
+import Sctjm3 from "/screenshot3-tjm.webp";
 
 export async function getPortfolioData(): Promise<PortfolioDataModel> {
   const myProjects: ProjectModel[] = [

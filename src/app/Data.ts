@@ -8,9 +8,23 @@ import ScInvSys from "/screenshot-inventorysystem.webp";
 import Sc1ecommerce from "/screenshot1-ecommerce.webp";
 import Sc2ecommerce from "/screenshot2-ecommerce.webp";
 import ScServicesfrom from "/screenshot-services.webp";
+import Sctjm1 from "/screenshot1-tjm.jpg";
+import Sctjm2 from "/screenshot2-tjm.jpg";
+import Sctjm3 from "/screenshot3-tjm.jpg";
 
 export async function getPortfolioData(): Promise<PortfolioDataModel> {
   const myProjects: ProjectModel[] = [
+    {
+      name: "TJM Business Platform: Sistema de gestión empresarial",
+      description:
+        "ERP/CRM ligero diseñado para ayudar a los administradores a llevar un control detallado de las operaciones de su negocio. Permite monitorear indicadores clave (ingresos, gastos, beneficio), gestionar clientes, y crear/visualizar/editar reportes y registrar compras.",
+      link: "https://github.com/juanmadev5/tjm_business_platform",
+      techList: [
+        "https://skillicons.dev/icons?i=flutter",
+        "https://skillicons.dev/icons?i=dart",
+      ],
+      screenshots: [Sctjm1, Sctjm2, Sctjm3],
+    },
     {
       name: "Fastsites.jm: Mi servicio de desarrollo de sitios web",
       description:

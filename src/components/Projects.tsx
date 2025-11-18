@@ -25,6 +25,7 @@ export default function Projects({ myProjects: myProjects }: ProjectsProps) {
                     height="24px"
                     src={techIcon}
                     alt={`${project.name} icon`}
+                    loading="lazy"
                   />
                 ))}
               </footer>

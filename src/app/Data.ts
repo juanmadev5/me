@@ -4,9 +4,6 @@ import { SocialLinksModel } from "../model/SocialLinksModel";
 import Sc1Imagify from "/screenshot1-imagify.webp";
 import Sc2Imagify from "/screenshot2-imagify.webp";
 import Sc3Imagify from "/screenshot3-imagify.webp";
-import ScInvSys from "/screenshot-inventorysystem.webp";
-import Sc1ecommerce from "/screenshot1-ecommerce.webp";
-import Sc2ecommerce from "/screenshot2-ecommerce.webp";
 import ScServicesfrom from "/screenshot-services.webp";
 import Sctjm1 from "/screenshot1-tjm.webp";
 import Sctjm2 from "/screenshot2-tjm.webp";
@@ -38,17 +35,6 @@ export async function getPortfolioData(): Promise<PortfolioDataModel> {
       screenshots: [ScServicesfrom],
     },
     {
-      name: "Sistema de Control de Inventario",
-      description:
-        "API RESTful para gestión de inventarios, con operaciones CRUD y persistencia de datos con In-Memory Database en desarrollo con posibilidad de configuración a MySQL Server en entorno de producción. Uso de JWT para autenticación segura y autorización de usuarios.",
-      link: "https://github.com/juanmadev5/InventorySystem-webapi",
-      techList: [
-        "https://skillicons.dev/icons?i=dotnet",
-        "https://skillicons.dev/icons?i=cs",
-      ],
-      screenshots: [ScInvSys],
-    },
-    {
       name: "Imagify: Aplicación de búsqueda y descarga de imágenes",
       description:
         "Desarrollada de forma nativa para Android utilizando Jetpack Compose para la interfaz de usuario. Conectada a la API de Unsplash, esta app permite a los usuarios buscar y descargar imágenes de alta calidad de forma eficiente, demostrando experiencia en el consumo de APIs y desarrollo moderno de UI en Android.",
@@ -59,20 +45,6 @@ export async function getPortfolioData(): Promise<PortfolioDataModel> {
         "https://skillicons.dev/icons?i=firebase",
       ],
       screenshots: [Sc1Imagify, Sc2Imagify, Sc3Imagify],
-    },
-    {
-      name: "E-commerce Backend & Admin Panel con Supabase",
-      description:
-        "Solución completa de gestión de productos para pequeños negocios, compuesta por dos partes clave: 1) Una API RESTful robusta (Node.js/JavaScript) para el manejo de inventario y catálogo, que usa Supabase (Base de Datos y Storage) para la persistencia. 2) Un Panel de Control totalmente funcional, que permite al usuario administrar el stock, crear, editar y eliminar productos, y gestionar sus imágenes. Este diseño desacoplado asegura que la API pueda alimentar tanto el panel de administración como cualquier otro frontend de ventas (web o móvil) personalizado.",
-      link: "https://github.com/juanmadev5/GestorDeProductos",
-      techList: [
-        "https://skillicons.dev/icons?i=nodejs",
-        "https://skillicons.dev/icons?i=js",
-        "https://skillicons.dev/icons?i=supabase",
-        "https://skillicons.dev/icons?i=html",
-        "https://skillicons.dev/icons?i=tailwind",
-      ],
-      screenshots: [Sc1ecommerce, Sc2ecommerce],
     },
   ];
 
@@ -100,7 +72,7 @@ export async function getPortfolioData(): Promise<PortfolioDataModel> {
       "https://avatars.githubusercontent.com/u/115042535?s=400&u=62a596cea79ad50f38ed1e841b021acae7b7b79a&v=4",
     location: "Ciudad de Limpio, Paraguay",
     aboutMeDescription:
-      "+2 años de experiencia como desarrollador web frontend y aplicaciones móviles Android, actualmente enfocandome en el desarrollo de sistemas backend.",
+      "Desarrollador web frontend con más de 2 años de experiencia y más de 1 año trabajando en el desarrollo de aplicaciones móviles nativas y multiplataforma.",
     cvlink:
       "https://drive.google.com/file/d/10u5nQp08dynd3C_7DuViF8Vq-jBoK-Cv/view?usp=drive_link",
   };

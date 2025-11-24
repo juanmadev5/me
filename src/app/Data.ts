@@ -15,7 +15,7 @@ export async function getPortfolioData(): Promise<PortfolioDataModel> {
       name: "TJM Business Platform: Sistema de gestión empresarial",
       description:
         "ERP/CRM ligero diseñado para ayudar a los administradores a llevar un control detallado de las operaciones de su negocio. Permite monitorear indicadores clave (ingresos, gastos, beneficio), gestionar clientes, y crear/visualizar/editar reportes y registrar compras.",
-      link: "https://github.com/juanmadev5/tjm_business_platform_core",
+      link: "https://github.com/juanmadev5/tjm_business_platform",
       techList: [
         "https://skillicons.dev/icons?i=flutter",
         "https://skillicons.dev/icons?i=dart",

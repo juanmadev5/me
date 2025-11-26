@@ -20,7 +20,7 @@ export default function Projects({ myProjects: myProjects }: ProjectsProps) {
                 <img
                     key={index}
                     className="h-8"
-                    src={project.techList}
+                    src={`${project.techList}&theme=dark`}
                     alt={`${project.name} icon`}
                     loading="lazy"
                   />

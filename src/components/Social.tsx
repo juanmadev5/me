@@ -15,7 +15,7 @@ export default function Social({ socialLinks, cvlink }: SocialProps) {
             target="_blank"
           >
             <img
-              src={item.icon_url}
+              src={`${item.icon_url}&theme=dark`}
               alt={item.name}
               width="28px"
               height="28px"

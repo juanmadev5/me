@@ -17,17 +17,13 @@ export default function Projects({ myProjects: myProjects }: ProjectsProps) {
               </h3>
 
               <footer className="flex flex-row mt-2">
-                {project.techList.map((techIcon, index) => (
-                  <img
+                <img
                     key={index}
-                    className="mr-2"
-                    width="24px"
-                    height="24px"
-                    src={techIcon}
+                    className="h-8"
+                    src={project.techList}
                     alt={`${project.name} icon`}
                     loading="lazy"
                   />
-                ))}
               </footer>
             </header>
 

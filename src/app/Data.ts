@@ -14,11 +14,7 @@ export async function getPortfolioData(): Promise<PortfolioDataModel> {
       description:
         "ERP/CRM ligero diseñado para ayudar a los administradores a llevar un control detallado de las operaciones de su negocio. Permite monitorear indicadores clave (ingresos, gastos, beneficio), gestionar clientes, y crear/visualizar/editar reportes y registrar compras.",
       link: "https://github.com/juanmadev5/tjm_business_platform",
-      techList: [
-        "https://skillicons.dev/icons?i=flutter",
-        "https://skillicons.dev/icons?i=dart",
-        "https://skillicons.dev/icons?i=supabase",
-      ],
+      techList: "https://go-skill-icons.vercel.app/api/icons?i=flutter,dart,supabase,android,windows,linux",
       screenshots: [Sctjm],
     },
     {
@@ -26,11 +22,7 @@ export async function getPortfolioData(): Promise<PortfolioDataModel> {
       description:
         "Landing page para mi servicio de desarrollo de sitios web, construido con React y TailwindCSS para una experiencia rápida y responsiva.",
       link: "https://github.com/juanmadev5/fastsites",
-      techList: [
-        "https://skillicons.dev/icons?i=react",
-        "https://skillicons.dev/icons?i=html",
-        "https://skillicons.dev/icons?i=tailwindcss",
-      ],
+      techList:"https://go-skill-icons.vercel.app/api/icons?i=react,tailwindcss",
       screenshots: [ScServicesfrom],
     },
     {
@@ -38,11 +30,7 @@ export async function getPortfolioData(): Promise<PortfolioDataModel> {
       description:
         "Desarrollada de forma nativa para Android utilizando Jetpack Compose para la interfaz de usuario. Conectada a la API de Unsplash, esta app permite a los usuarios buscar y descargar imágenes de alta calidad de forma eficiente, demostrando experiencia en el consumo de APIs y desarrollo moderno de UI en Android.",
       link: "https://github.com/juanmadev5/Imagify",
-      techList: [
-        "https://skillicons.dev/icons?i=androidstudio",
-        "https://skillicons.dev/icons?i=kotlin",
-        "https://skillicons.dev/icons?i=firebase",
-      ],
+      techList:"https://go-skill-icons.vercel.app/api/icons?i=android,jetpackcompose,kotlin,firebase,api",
       screenshots: [Sc1Imagify, Sc2Imagify, Sc3Imagify],
     },
   ];
@@ -51,12 +39,12 @@ export async function getPortfolioData(): Promise<PortfolioDataModel> {
     {
       name: "GitHub",
       link: "https://github.com/juanmadev5",
-      icon_url: "https://skillicons.dev/icons?i=github",
+      icon_url: "https://go-skill-icons.vercel.app/api/icons?i=github",
     },
     {
       name: "LinkedIn",
       link: "https://www.linkedin.com/in/jmdev365/",
-      icon_url: "https://skillicons.dev/icons?i=linkedin",
+      icon_url: "https://go-skill-icons.vercel.app/api/icons?i=linkedin",
     },
   ];
 
@@ -66,7 +54,7 @@ export async function getPortfolioData(): Promise<PortfolioDataModel> {
   > = {
     devName: "JM Dev",
     fullName: "Juan Manuel Velázquez",
-    headerDescription: "Desarrollador Android / Web Frontend",
+    headerDescription: "Web frontend / Mobile developer",
     profilePhoto:
       "https://avatars.githubusercontent.com/u/115042535?s=400&u=62a596cea79ad50f38ed1e841b021acae7b7b79a&v=4",
     location: "Ciudad de Limpio, Paraguay",

@@ -5,9 +5,7 @@ import Sc1Imagify from "/screenshot1-imagify.webp";
 import Sc2Imagify from "/screenshot2-imagify.webp";
 import Sc3Imagify from "/screenshot3-imagify.webp";
 import ScServicesfrom from "/screenshot-services.webp";
-import Sctjm1 from "/screenshot1-tjm.webp";
-import Sctjm2 from "/screenshot2-tjm.webp";
-import Sctjm3 from "/screenshot3-tjm.webp";
+import Sctjm from "/screenshot-tjm.webp";
 
 export async function getPortfolioData(): Promise<PortfolioDataModel> {
   const myProjects: ProjectModel[] = [
@@ -21,7 +19,7 @@ export async function getPortfolioData(): Promise<PortfolioDataModel> {
         "https://skillicons.dev/icons?i=dart",
         "https://skillicons.dev/icons?i=supabase",
       ],
-      screenshots: [Sctjm1, Sctjm2, Sctjm3],
+      screenshots: [Sctjm],
     },
     {
       name: "Fastsites.jm: Mi servicio de desarrollo de sitios web",

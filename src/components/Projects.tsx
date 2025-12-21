@@ -9,10 +9,10 @@ export default function Projects({ myProjects: myProjects }: ProjectsProps) {
         return (
           <article
             key={index}
-            className="p-4 rounded-2xl border-2 border-onSecondary"
+            className="p-4 rounded-2xl border-2 border-on-secondary"
           >
             <header className="flex flex-col max-w-64 md:max-w-full sm:max-w-full">
-              <h3 className="text-sm text-onSurface text-opacity-80 tracking-wider font-semibold">
+              <h3 className="text-sm text-on-surface text-opacity-80 tracking-wider font-semibold">
                 {project.name}
               </h3>
 
@@ -39,7 +39,7 @@ export default function Projects({ myProjects: myProjects }: ProjectsProps) {
             </div>
 
             <footer className="mt-6">
-              <p className="text-sm mb-2 text-onSurface text-opacity-80">
+              <p className="text-sm mb-2 text-on-surface text-opacity-80">
                 {project.description}
               </p>
               <a

@@ -28,7 +28,7 @@ export default function Contact() {
   return (
     <form className="sm:mx-0 max-md:mx-2 xl:mx-32" onSubmit={sendEmail}>
         <div className="mb-4">
-          <label className="block text-sm mb-2 text-onSurface" htmlFor="name">
+          <label className="block text-sm mb-2 text-on-surface" htmlFor="name">
             {strings.formName}
           </label>
           <input
@@ -36,14 +36,14 @@ export default function Contact() {
             id="name"
             name="from_name"
             autoComplete="true"
-            className="bg-onSecondary shadow appearance-none rounded-2xl w-full py-2 px-3 text-onSurface leading-tight focus:outline-none"
+            className="bg-on-secondary shadow appearance-none rounded-2xl w-full py-2 px-3 text-on-surface leading-tight focus:outline-none"
             placeholder={strings.formNamePH}
             required
           />
         </div>
 
         <div className="mb-4">
-          <label className="block text-sm mb-2 text-onSurface" htmlFor="email">
+          <label className="block text-sm mb-2 text-on-surface" htmlFor="email">
             {strings.formEmail}
           </label>
           <input
@@ -51,21 +51,21 @@ export default function Contact() {
             id="email"
             name="from_email"
             autoComplete="true"
-            className="bg-onSecondary shadow appearance-none rounded-2xl w-full py-2 px-3 text-onSurface leading-tight focus:outline-none"
+            className="bg-on-secondary shadow appearance-none rounded-2xl w-full py-2 px-3 text-on-surface leading-tight focus:outline-none"
             placeholder={strings.formEmailPH}
             required
           />
         </div>
 
         <div className="mb-4">
-          <label className="block text-sm mb-2 text-onSurface" htmlFor="message">
+          <label className="block text-sm mb-2 text-on-surface" htmlFor="message">
             {strings.formMSJ}
           </label>
           <textarea
             id="message"
             name="message"
             rows={4}
-            className="rezise-none bg-onSecondary shadow appearance-none rounded-2xl w-full py-2 px-3 text-onSurface leading-tight focus:outline-none"
+            className="rezise-none bg-on-secondary shadow appearance-none rounded-2xl w-full py-2 px-3 text-on-surface leading-tight focus:outline-none"
             placeholder={strings.formMSJPH}
             required
           ></textarea>

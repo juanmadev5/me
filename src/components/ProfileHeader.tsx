@@ -31,10 +31,10 @@ export default function ProfileHeader({
         src={profilePhoto}
       />
       <p className="mt-6 text-2xl text-primary text-center">{fullName}</p>
-      <p className="text-center text-onSurface opacity-90 mt-4">
+      <p className="text-center text-on-surface opacity-90 mt-4">
         {headerDescription}
       </p>
-      <footer className="mt-2 flex text-xs text-onSurface opacity-80 justify-center items-center flex-col">
+      <footer className="mt-2 flex text-xs text-on-surface opacity-80 justify-center items-center flex-col">
         <img
           width="20px"
           height="20px"

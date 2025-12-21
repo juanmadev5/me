@@ -15,9 +15,12 @@ export function App() {
   const [data, setData] = useState<PortfolioDataModel | null>(null);
   const [showContent, setShowContent] = useState(false);
 
-  document.title = data ? data.devName : "Portafolio";
-  const metaDesc = document.querySelector('meta[name="description"]');
-  metaDesc?.setAttribute("content", data ? data.devName : "Portafolio");
+  // Update document title and meta description when data changes
+  useEffect(() => {
+    document.title = data ? data.devName : "Portafolio";
+    const metaDesc = document.querySelector('meta[name="description"]');
+    metaDesc?.setAttribute("content", data ? data.devName : "Portafolio");
+  }, [data]);
 
   useEffect(() => {
     (async () => {

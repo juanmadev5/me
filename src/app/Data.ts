@@ -14,7 +14,7 @@ export async function getPortfolioData(): Promise<PortfolioDataModel> {
       description:
         "ERP/CRM ligero diseñado para ayudar a los administradores a llevar un control detallado de las operaciones de su negocio. Permite monitorear indicadores clave (ingresos, gastos, beneficio), gestionar clientes, y crear/visualizar/editar reportes y registrar compras.",
       link: "https://github.com/juanmadev5/tjm_business_platform",
-      techList: "https://go-skill-icons.vercel.app/api/icons?i=flutter,dart,supabase,android,windows,linux",
+      techList: "https://go-skill-icons.vercel.app/api/icons?i=flutter,dart,supabase",
       screenshots: [Sctjm],
     },
     {
@@ -30,7 +30,7 @@ export async function getPortfolioData(): Promise<PortfolioDataModel> {
       description:
         "Desarrollada de forma nativa para Android utilizando Jetpack Compose para la interfaz de usuario. Conectada a la API de Unsplash, esta app permite a los usuarios buscar y descargar imágenes de alta calidad de forma eficiente, demostrando experiencia en el consumo de APIs y desarrollo moderno de UI en Android.",
       link: "https://github.com/juanmadev5/Imagify",
-      techList:"https://go-skill-icons.vercel.app/api/icons?i=android,jetpackcompose,kotlin,firebase,api",
+      techList:"https://go-skill-icons.vercel.app/api/icons?i=android,jetpackcompose,kotlin,firebase",
       screenshots: [Sc1Imagify, Sc2Imagify, Sc3Imagify],
     },
   ];
@@ -70,3 +70,4 @@ export async function getPortfolioData(): Promise<PortfolioDataModel> {
     socialLinks,
   };
 }
+

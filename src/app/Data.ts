@@ -4,7 +4,6 @@ import { SocialLinksModel } from "../model/SocialLinksModel";
 import Sc1Imagify from "/screenshot1-imagify.webp";
 import Sc2Imagify from "/screenshot2-imagify.webp";
 import Sc3Imagify from "/screenshot3-imagify.webp";
-import ScServicesfrom from "/screenshot-services.webp";
 import Sctjm from "/screenshot-tjm.webp";
 
 export async function getPortfolioData(): Promise<PortfolioDataModel> {
@@ -16,14 +15,6 @@ export async function getPortfolioData(): Promise<PortfolioDataModel> {
       link: "https://github.com/juanmadev5/tjm_business_platform",
       techList: "https://go-skill-icons.vercel.app/api/icons?i=flutter,dart,supabase",
       screenshots: [Sctjm],
-    },
-    {
-      name: "Fastsites.jm: Mi servicio de desarrollo de sitios web",
-      description:
-        "Landing page para mi servicio de desarrollo de sitios web, construido con React y TailwindCSS para una experiencia rápida y responsiva.",
-      link: "https://github.com/juanmadev5/fastsites",
-      techList:"https://go-skill-icons.vercel.app/api/icons?i=react,tailwindcss",
-      screenshots: [ScServicesfrom],
     },
     {
       name: "Imagify: Aplicación de búsqueda y descarga de imágenes",
@@ -70,4 +61,5 @@ export async function getPortfolioData(): Promise<PortfolioDataModel> {
     socialLinks,
   };
 }
+
 

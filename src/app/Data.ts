@@ -14,7 +14,7 @@ export async function getPortfolioData(): Promise<PortfolioDataModel> {
       description:
         "Herramienta de CLI para administrar y clasificar proyectos de programación desde un solo lugar, además puedes abrir tus proyectos desde el mismo lugar en tu editor de código favorito gracias a que ProjectLens detecta los editores instalados en tu sistema.",
       link: "https://github.com/juanmadev5/ProjectLens",
-      techList: "https://go-skill-icons.vercel.app/api/icons?i=c#,dotnet",
+      techList: "https://go-skill-icons.vercel.app/api/icons?i=cs,dotnet",
       screenshots: [projectLensSc],
     },
     {
@@ -70,6 +70,7 @@ export async function getPortfolioData(): Promise<PortfolioDataModel> {
     socialLinks,
   };
 }
+
 
 
 

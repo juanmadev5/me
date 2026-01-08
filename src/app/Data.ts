@@ -9,7 +9,6 @@ import projectLensSc from "/project-lens-screenshot.webp"
 
 export async function getPortfolioData(): Promise<PortfolioDataModel> {
   const myProjects: ProjectModel[] = [
-
     {
       name: "ProjectLens: CLI para administrar proyectos de programación",
       description:
@@ -18,7 +17,6 @@ export async function getPortfolioData(): Promise<PortfolioDataModel> {
       techList: "https://go-skill-icons.vercel.app/api/icons?i=c#,dotnet",
       screenshots: [projectLensSc],
     },
-
     {
       name: "TJM Business Platform: Sistema de gestión empresarial",
       description:
@@ -72,5 +70,6 @@ export async function getPortfolioData(): Promise<PortfolioDataModel> {
     socialLinks,
   };
 }
+
 
 

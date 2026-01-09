@@ -5,18 +5,9 @@ import Sc1Imagify from "/screenshot1-imagify.webp";
 import Sc2Imagify from "/screenshot2-imagify.webp";
 import Sc3Imagify from "/screenshot3-imagify.webp";
 import Sctjm from "/screenshot-tjm.webp";
-import projectLensSc from "/project-lens-screenshot.webp"
 
 export async function getPortfolioData(): Promise<PortfolioDataModel> {
   const myProjects: ProjectModel[] = [
-    {
-      name: "ProjectLens: CLI para administrar proyectos de programación",
-      description:
-        "Herramienta de CLI para administrar y clasificar proyectos de programación desde un solo lugar, además puedes abrir tus proyectos desde el mismo lugar en tu editor de código favorito gracias a que ProjectLens detecta los editores instalados en tu sistema.",
-      link: "https://github.com/juanmadev5/ProjectLens",
-      techList: "https://go-skill-icons.vercel.app/api/icons?i=cs,dotnet",
-      screenshots: [projectLensSc],
-    },
     {
       name: "TJM Business Platform: Sistema de gestión empresarial",
       description:

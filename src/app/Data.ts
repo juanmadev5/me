@@ -45,7 +45,7 @@ export async function getPortfolioData(): Promise<PortfolioDataModel> {
   > = {
     devName: "JM Dev",
     fullName: "Juan Manuel Velázquez",
-    headerDescription: "Web frontend / Mobile developer",
+    headerDescription: "Desarrollador Flutter / Web Frontend",
     profilePhoto:
       "https://avatars.githubusercontent.com/u/115042535?s=400&u=62a596cea79ad50f38ed1e841b021acae7b7b79a&v=4",
     location: "Ciudad de Limpio, Paraguay",
@@ -61,6 +61,7 @@ export async function getPortfolioData(): Promise<PortfolioDataModel> {
     socialLinks,
   };
 }
+
 
 
 

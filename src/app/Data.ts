@@ -52,7 +52,7 @@ export async function getPortfolioData(): Promise<PortfolioDataModel> {
     aboutMeDescription:
       "Desarrollador web frontend con más de 2 años de experiencia y más de 1 año trabajando en el desarrollo de aplicaciones móviles nativas y multiplataforma.",
     cvlink:
-      "https://drive.google.com/file/d/10u5nQp08dynd3C_7DuViF8Vq-jBoK-Cv/view?usp=drive_link",
+      "https://1drv.ms/b/c/9a678e985c9ac7f9/IQCQpXKXvGoUSLFuY1rLwm8bAYqlFO9GBW38CcA4a7TevM0?e=1iVFdN",
   };
 
   return {
